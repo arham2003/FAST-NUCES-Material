@@ -1,0 +1,2 @@
+Closest Points: ((149, 93), (149, 92))
+Minimum Distance: 1.000000

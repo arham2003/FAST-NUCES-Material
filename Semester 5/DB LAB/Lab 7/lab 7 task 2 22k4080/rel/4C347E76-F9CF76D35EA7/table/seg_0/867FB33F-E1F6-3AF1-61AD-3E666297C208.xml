@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="867FB33F-E1F6-3AF1-61AD-3E666297C208" name="billing">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:24:34 UTC</createdTime>
+<generatorID>FD14EBE3-B9F8-9C0E-84B1-4EA9FE741CB5</generatorID>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="billing_id" id="3FBE051A-863B-B0C8-14E7-09123186F0D4">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:24:34 UTC</createdTime>
+<generatorID>46845923-06C0-5B1B-E484-6462055313CC</generatorID>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>34028724-FEF8-B7C0-3C41-DE3CCB1FF039</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="meal_id" id="48DC8E6A-D2E0-0DE2-5E4D-F07093EBDF17">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:24:34 UTC</createdTime>
+<generatorID>E2A6D613-9D6B-3358-F592-D8E0EE2EC149</generatorID>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>34028724-FEF8-B7C0-3C41-DE3CCB1FF039</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prize" id="B0EC7A56-FD16-BB91-F0B0-28E867CBF421">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:24:34 UTC</createdTime>
+<generatorID>657F1523-EE9D-C70C-1BAB-91649E237411</generatorID>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>34028724-FEF8-B7C0-3C41-DE3CCB1FF039</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="resident_id" id="729D542B-4901-D413-2F54-79D1C4055169">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:24:34 UTC</createdTime>
+<generatorID>DA3AEB43-090D-2240-6D79-7CEEA6F035D2</generatorID>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>34028724-FEF8-B7C0-3C41-DE3CCB1FF039</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cycle" id="9B8BAD7B-85F1-D2DB-3180-5C0D3413B81F">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:24:34 UTC</createdTime>
+<generatorID>92914459-0AD0-5C68-03C6-97E8EE0AE1FB</generatorID>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>80E4478C-7819-D1A8-084B-14644382EA8E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hostel_residents_id" id="869A8830-8799-1867-3580-D27243B149AB">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:24:34 UTC</createdTime>
+<generatorID>C41DDD2C-69DD-2243-6104-1ED5071EB1AB</generatorID>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>34028724-FEF8-B7C0-3C41-DE3CCB1FF039</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CE99B836-C0F3-06DB-E3E8-8F705D963E11" referredColumn="59C0E82C-85BC-1E30-A393-9269A4912848"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="34A6BCAC-F1E8-73E1-3332-2A912036EC46" name="billing_PK">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:24:34 UTC</createdTime>
+<generatorID>4DA5D5AF-4050-4EA2-5517-56F5835AA032</generatorID>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3FBE051A-863B-B0C8-14E7-09123186F0D4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1C836DDF-4690-607A-B551-73DA3F64DF79" name="billing_hostel_residents_FK">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:24:34 UTC</createdTime>
+<generatorID>A59D4BAB-36C7-4B25-7001-81A9DF37E8D6</generatorID>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="869A8830-8799-1867-3580-D27243B149AB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

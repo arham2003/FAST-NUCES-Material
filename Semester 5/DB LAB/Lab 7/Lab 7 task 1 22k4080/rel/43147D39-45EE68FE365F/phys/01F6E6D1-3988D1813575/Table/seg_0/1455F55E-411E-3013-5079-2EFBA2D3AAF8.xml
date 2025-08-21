@@ -1,0 +1,36 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="instructor" directorySegmentName="seg_0" id="1455F55E-411E-3013-5079-2EFBA2D3AAF8">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:26:11 UTC</createdTime>
+<ownerDesignName>Lab 7 task 1 22k4080</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="name" id="68D17C6E-959D-E6AD-9697-03B9FA6613C0">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:26:11 UTC</createdTime>
+<ownerDesignName>Lab 7 task 1 22k4080</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="email" id="6D9F296E-D71D-CCC6-1F5F-DA5915B64E8E">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:26:11 UTC</createdTime>
+<ownerDesignName>Lab 7 task 1 22k4080</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="instructor_id" id="F7C0D6D8-8825-959E-5311-9A3BCE56D59B">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:26:11 UTC</createdTime>
+<ownerDesignName>Lab 7 task 1 22k4080</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="instructor_pk" id="E1507992-C87D-941F-0EB8-37AF11BC6CE9">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:26:11 UTC</createdTime>
+<ownerDesignName>Lab 7 task 1 22k4080</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

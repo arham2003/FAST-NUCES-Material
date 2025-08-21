@@ -1,0 +1,3 @@
+https://www.kaggle.com/datasets/karkavelrajaj/amazon-sales-dataset/data
+
+https://www.kaggle.com/datasets/promptcloud/walmart-product-review-data

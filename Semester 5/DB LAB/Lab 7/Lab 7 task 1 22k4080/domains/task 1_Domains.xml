@@ -1,0 +1,51 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<DomainFile class="oracle.dbtools.crest.model.design.DomainFileWrapper" fileName="task 1_Domains">
+<domains>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="Integer_0_0_0" id="1E69ABFC-D5CD-3EA7-1F72-FC32DFD1B1AA">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:26:11 UTC</createdTime>
+<ownerDesignName>Lab 7 task 1 22k4080</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<fileName>task 1_Domains</fileName>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="CHAR_0_0_1" id="3C743596-9B66-42AE-7E88-F07E08FBBC8C">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:26:11 UTC</createdTime>
+<ownerDesignName>Lab 7 task 1 22k4080</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>1</dataTypeSize>
+<fileName>task 1_Domains</fileName>
+<logicalDatatype>LOGDT025</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="Date_0_0_0" id="A8687623-940D-8563-81DB-BD7415AFDDE0">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:26:11 UTC</createdTime>
+<ownerDesignName>Lab 7 task 1 22k4080</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<fileName>task 1_Domains</fileName>
+<logicalDatatype>LOGDT007</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_250" id="DBCF3673-7147-644F-4C9B-92496AAB5285">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:26:11 UTC</createdTime>
+<ownerDesignName>Lab 7 task 1 22k4080</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>250</dataTypeSize>
+<fileName>task 1_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="FLOAT_0_0_0" id="E028EE5F-BF01-DF27-7266-50E0B2A34BBB">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:26:11 UTC</createdTime>
+<ownerDesignName>Lab 7 task 1 22k4080</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<fileName>task 1_Domains</fileName>
+<logicalDatatype>LOGDT021</logicalDatatype>
+</Domain>
+</domains>
+</DomainFile>

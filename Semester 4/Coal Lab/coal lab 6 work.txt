@@ -1,0 +1,84 @@
+.data
+string1 BYTE "Enter 5 integers", 0  ;0 = null terminator
+array1 BYTE 5 DUP(0) ;for user input
+
+.code
+main PROC
+
+COMMENT @
+mov edx, OFFSET string1
+call writestring
+
+mov esi, OFFSET array1
+mov ecx, 5
+;user input
+L1:
+call ReadInt
+mov [esi], eax
+inc esi
+call crlf
+loop l1
+
+call crlf
+;for showing all the values in array1
+
+mov esi, 0  ;works like: mov esi, OFFSET array1
+mov ecx, 5
+L2:
+movzx eax,array1[esi]
+call writedec
+call crlf
+inc esi
+loop L2
+
+exit
+@
+
+COMMENT @
+mov eax,11
+
+L1:
+cmp eax, 11
+je end1
+call writedec
+call crlf
+inc eax
+jmp L1
+
+end1:
+exit
+@
+
+
+COMMENT @
+mov eax, 4
+mov ebx, 4
+mov edx, 4
+
+
+outer_loop:
+	
+	
+	mov ecx, ebx
+
+	inner_loop:			;4321
+		call writedec	;321
+		dec eax			;21
+		loop inner_loop	;1
+						
+	call crlf
+	dec edx
+	mov eax, edx
+	cmp ebx, 1
+	je end1
+	dec ebx
+	jmp outer_loop
+		
+
+
+end1:
+exit
+@
+
+main ENDP
+END main

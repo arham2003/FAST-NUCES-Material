@@ -1,0 +1,81 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="result" directorySegmentName="seg_0" id="D419C7EC-D3ED-85EF-C5A1-BB8578C2FC80">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:26:11 UTC</createdTime>
+<ownerDesignName>Lab 7 task 1 22k4080</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="students_student_id" id="179072AF-49C9-BED7-A61C-5FA4792BF221">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:26:11 UTC</createdTime>
+<ownerDesignName>Lab 7 task 1 22k4080</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="student_id1" id="2CB1053E-5B9A-F0F9-8CD5-BF487E472353">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:26:11 UTC</createdTime>
+<ownerDesignName>Lab 7 task 1 22k4080</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="student_id" id="4C4AD5D8-9669-8D56-3A8B-DD9728EBF0CF">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:26:11 UTC</createdTime>
+<ownerDesignName>Lab 7 task 1 22k4080</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="marks" id="65391697-033F-7B89-11A5-CDC138D34D7F">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:26:11 UTC</createdTime>
+<ownerDesignName>Lab 7 task 1 22k4080</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="exam_exam_name" id="6EA086D8-6A1B-0858-8B64-820E9EE937F7">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:26:11 UTC</createdTime>
+<ownerDesignName>Lab 7 task 1 22k4080</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="sgpa" id="7DC9F339-5C03-A060-B865-B697814881B1">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:26:11 UTC</createdTime>
+<ownerDesignName>Lab 7 task 1 22k4080</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="course_id" id="98CAA6BC-4951-72C0-8198-A36F0718A34E">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:26:11 UTC</createdTime>
+<ownerDesignName>Lab 7 task 1 22k4080</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="cgpa" id="AB45EC1B-D8C9-54C5-F727-2C64AEC3B5BD">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:26:11 UTC</createdTime>
+<ownerDesignName>Lab 7 task 1 22k4080</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="result__idx" id="7B2D7564-B65B-F6C2-028C-288BFF2D64FA">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:26:11 UTC</createdTime>
+<ownerDesignName>Lab 7 task 1 22k4080</ownerDesignName>
+<logging></logging>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="result_exam_fk" id="1AB95B62-0F2A-1BDB-66D5-98B9A4E96D25">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:26:11 UTC</createdTime>
+<ownerDesignName>Lab 7 task 1 22k4080</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="result_students_fk" id="BC51D357-5458-5F76-1DC1-6DA5A6E97BDA">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:26:11 UTC</createdTime>
+<ownerDesignName>Lab 7 task 1 22k4080</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="result_pk" id="D97F1566-6FD0-05AA-E2B4-72FDD0F9C333">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:26:11 UTC</createdTime>
+<ownerDesignName>Lab 7 task 1 22k4080</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

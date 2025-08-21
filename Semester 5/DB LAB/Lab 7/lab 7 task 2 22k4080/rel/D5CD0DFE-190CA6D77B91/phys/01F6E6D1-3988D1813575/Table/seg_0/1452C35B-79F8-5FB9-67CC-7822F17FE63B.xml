@@ -1,0 +1,68 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="booking" directorySegmentName="seg_0" id="1452C35B-79F8-5FB9-67CC-7822F17FE63B">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:21:23 UTC</createdTime>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="meal_operation_operation_id" id="875C28DA-EED1-FD9A-3F26-F161FEC258B3">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:21:23 UTC</createdTime>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="booking_id" id="A34DD67B-F5B7-59F0-C9C1-791313E93E2C">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:21:23 UTC</createdTime>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="hostel_residents_id" id="AB772D3A-897F-59CA-A103-6D6DF7D991E0">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:21:23 UTC</createdTime>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="resident_id" id="DD3BBC40-7A11-1C24-B44A-BE239CB1CD95">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:21:23 UTC</createdTime>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="booking_date" id="E8F54201-F519-B694-90CF-097297C88F2F">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:21:23 UTC</createdTime>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="booking_time" id="FC3F04B1-E553-CCA7-721E-C441C787896A">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:21:23 UTC</createdTime>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="meal_id" id="FF0011B0-5AF6-2B0C-F46E-CB3577572E10">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:21:23 UTC</createdTime>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="booking_meal_operation_fk" id="4FFD11F7-95D0-1FDE-7CE9-B0046F128601">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:21:23 UTC</createdTime>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="booking_hostel_residents_fk" id="9535DFE9-71E0-1711-CFFD-6423EEF12C28">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:21:23 UTC</createdTime>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="booking_pk" id="B7BCAD79-856A-F62F-054F-26AEF1C5EAE3">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:21:23 UTC</createdTime>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

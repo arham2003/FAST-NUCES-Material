@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="attendance_exam_fk" directorySegmentName="seg_0" id="C12727F3-7078-F073-068A-0887E38BD7C1">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:26:30 UTC</createdTime>
+<generatorID>93EF50AD-292C-1329-963C-3F2F35C71EF9</generatorID>
+<ownerDesignName>Lab 7 task 1 22k4080</ownerDesignName>
+<engineerTo>
+<item key="43147D39-16BF-0AF9-58B2-45EE68FE365F" value="true"/>
+</engineerTo>
+<sourcePk>DF7DE501-39D4-D874-486A-0D176AEF4300</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>E3CEC52A-5199-D8EE-616C-10CDB031E2B9</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>9CBAC91C-6DCF-5B19-FFEC-0C4E7564FC27</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

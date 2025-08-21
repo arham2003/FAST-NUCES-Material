@@ -1,0 +1,110 @@
+;direct-offset operands
+;LENGTHOF operands
+
+INCLUDE Irvine32.inc
+
+
+
+.data
+
+;array DWORD 10, 20, 30, 40 ; multiple initializers
+array2 DWORD 5 DUP(?)
+array1 BYTE 10,20,30
+arr WORD 40, 30 , 50
+
+
+
+valB BYTE ?
+valW WORD ?
+valD DWORD ?
+valD2 DWORD ?
+;len = ($ - array)/4
+
+
+.code
+main PROC
+
+COMMENT @
+mov ecx, len ;ECX = 4
+mov esi, OFFSET array ; address of 10
+
+print_loop: ;label
+mov eax, [esi]
+call writedec
+call crlf
+add esi, 4
+loop print_loop  ;loop is synced with ecx
+@
+
+;for experiment
+COMMENT @
+mov eax, 0
+mov ax, WORD PTR arr+1
+call dumpregs
+@
+
+mov ax, WORD PTR array2
+call dumpregs
+
+COMMENT !
+mov eax,0
+mov eax, len
+call writedec
+!
+
+
+COMMENT !
+mov ESI, 0
+mov ESI, OFFSET valB
+call dumpregs
+mov ESI, OFFSET valW
+call dumpregs
+mov ESI, OFFSET valD
+call dumpregs
+mov ESI, OFFSET valD2
+call dumpregs
+!
+
+COMMENT @
+mov eax, array[0]
+call writedec
+call crlf
+mov eax, array[4]
+call writedec
+call crlf
+mov eax, array[8]
+call writedec
+call crlf
+mov eax, [array+4] ; [array] -> gives the element on starting location (for WORD we use 2Bytes, for DWORD we use 4bytes and for BYTE -> 1 byte)
+call writedec
+call crlf
+@
+
+COMMENT !
+mov eax, TYPE array
+call writedec
+!
+
+COMMENT @
+movsx ebx, varw
+mov eax,ebx
+call writeint
+call crlf
+@
+
+
+COMMENT @
+mov eax,0
+mov ebx,0
+call dumpregs
+mov eax, 50h
+mov ebx, 51h
+call dumpregs
+xchg eax, ebx
+call dumpregs
+@
+
+
+exit
+main ENDP
+END main

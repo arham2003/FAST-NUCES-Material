@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="760E1A4C-387E-4A9D-0123-D6496197A901" name="inventory">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:24:34 UTC</createdTime>
+<generatorID>18D5AC37-BD03-C476-47BC-0C174A495245</generatorID>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ingredient_name" id="DD91499C-5FC4-A66A-442A-D603B6AD1FF4">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:24:34 UTC</createdTime>
+<generatorID>361494A3-402D-5307-7B3D-E76B459E284D</generatorID>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>80E4478C-7819-D1A8-084B-14644382EA8E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="quantity" id="737D8692-17EE-FA19-225F-4B8CCD5649EC">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:24:34 UTC</createdTime>
+<generatorID>C86A95A9-D999-D8B8-B879-DBFCDD31DA46</generatorID>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>34028724-FEF8-B7C0-3C41-DE3CCB1FF039</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hostel_hostel_id" id="65C4AF15-33F3-D409-1BDB-6F6DFE8E5507">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:24:34 UTC</createdTime>
+<generatorID>AF7F356B-D2A4-4D21-6179-76C7733C33D1</generatorID>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>34028724-FEF8-B7C0-3C41-DE3CCB1FF039</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="78D0A61F-7C02-DA81-ACBC-620A3078C72D" referredColumn="E42034AC-96B8-88DD-1DA9-3E75E9A7784D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E30A332D-3A94-A415-A497-77C4813AB342" name="inventory_PK">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:24:34 UTC</createdTime>
+<generatorID>C1301948-48D0-60C6-4D76-9080CC1EC630</generatorID>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DD91499C-5FC4-A66A-442A-D603B6AD1FF4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1F24C392-CDE3-9C37-C04C-D164B3709C99" name="inventory_hostel_FK">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:24:34 UTC</createdTime>
+<generatorID>B39E42B5-657C-0875-1D43-059D9C1037ED</generatorID>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="65C4AF15-33F3-D409-1BDB-6F6DFE8E5507"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

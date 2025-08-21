@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1A481859-E9A8-6142-C471-F4FD42D175FF" name="hostel">
+<sourceDDLFile>task2.ddl</sourceDDLFile>
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:21:23 UTC</createdTime>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<importedID>E7A7CC9E-D242-DB52-EF81-F00D4BD02E00</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="name" id="F0F1318A-007B-7DDC-7CA4-72D29CB25F00">
+<sourceDDLFile>task2.ddl</sourceDDLFile>
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:21:23 UTC</createdTime>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<importedID>A5D7ADC9-53A4-3A16-7B90-55DAF3948128</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>80E4478C-7819-D1A8-084B-14644382EA8E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hostel_id" id="218E6C8C-4790-07B9-C279-D3D4A24FC897">
+<sourceDDLFile>task2.ddl</sourceDDLFile>
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:21:23 UTC</createdTime>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<importedID>64F0E0C9-EB41-64C0-5CCC-9C7795DBE7AF</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>34028724-FEF8-B7C0-3C41-DE3CCB1FF039</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="address" id="609F013D-75E3-B932-5BE6-30E701A11E67">
+<sourceDDLFile>task2.ddl</sourceDDLFile>
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:21:23 UTC</createdTime>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<importedID>8C732A88-3615-9E3D-0297-D3DD3AC26AAC</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>80E4478C-7819-D1A8-084B-14644382EA8E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BAF376CD-DC7A-A2F6-6A45-0501987F551F" name="hostel_pk">
+<sourceDDLFile>task2.ddl</sourceDDLFile>
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:21:23 UTC</createdTime>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<importedID>4020D64A-F34D-F13C-2612-7796FD5A78B4</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="218E6C8C-4790-07B9-C279-D3D4A24FC897"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

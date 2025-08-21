@@ -1,0 +1,79 @@
+-- Q3 a:
+
+select b.title from Books b, Reviews R
+Where b.book_id = R.book_id AND R.rating = 5;
+
+-- Q3 b:
+
+Select A.author_name From Employee A Join Books B
+ON A.author_id = B.author_id
+Where B.genre = 'Science Fiction'
+Group by A.author_name Having 
+Count(B.book_id)  > 3
+
+-- Q3 c:
+
+Select C.customer_name, C.customer_id From Customers C Join Orders O ON
+C.customer_id = O.customer_id
+Group By C.customer_id, C.customer_name, to_char(O.order_date, 'YYYY-MM')
+Having Sum(O.total_amount) > 500 ;
+
+-- Q3 d:
+
+Select B.title from Books B
+Where B.price < 
+(select avg(Bk.price) from Books Bk Where B.author_id = Bk.author_id);
+
+-- Q3 e:
+
+Select B.title from Books B Left Join OrderDetails O
+ON B.book_id = O.book_id AND O.order_id IS NULL;
+
+-- Q3 f:
+
+Select  C.Customer_name from Customers C
+JOIN Reviews R ON C.customer_id = R.customer_id
+where R.rating < 3;
+
+
+-- Q3 g:
+
+Select A.author_name, count(B.book_id) From Books B, Author A
+Where A.author_id = B.author_id
+Group by A.author_id, A.Author_name;
+
+-- Q3 h:
+
+Select customer_name From Customers
+Where To_Char(join_date, 'YYYY-MM') = 
+(select to_char(C.join_date, 'YYYY-MM') from Customers C, Orders O 
+Where C.customer_id = O.customer_id 
+Group By O.total_amount Having Max(O.total_amount))
+
+-- Q3 i:
+
+Select B.genre from Books B, Inventory I
+Where B.book_id = I.book_id
+AND I.stock_quantity < I.reorder_level;
+
+-- Q3 j:
+
+Select A.author_id, A.author_name, B.book_name from Authors A JOIN Books B
+ON A.author_id = B.author_id
+LEFT JOIN Reviews R ON B.book_id = R.book_id		-- Left join will allow to get null values in review_id column.
+Where R.review_id is NULL;
+
+(writing query in subquery form - 3j):
+
+Select Author_name From Author
+Where Book_id NOT IN (Select Book_Id from Reviews);
+
+
+
+
+
+
+
+
+
+

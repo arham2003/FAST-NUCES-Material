@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4665CE75-D0FA-6A2C-CDF1-2AEDEA403BAD" name="registeration">
+<sourceDDLFile>task 1.ddl</sourceDDLFile>
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:26:11 UTC</createdTime>
+<ownerDesignName>Lab 7 task 1 22k4080</ownerDesignName>
+<importedID>DFE90C3D-88A6-A16B-9000-9CF0260991CA</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="registeration_id" id="C0137D95-70AC-CDE3-9BFE-AB2F15068CB2">
+<sourceDDLFile>task 1.ddl</sourceDDLFile>
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:26:11 UTC</createdTime>
+<ownerDesignName>Lab 7 task 1 22k4080</ownerDesignName>
+<importedID>A29C8756-A255-C938-B5E4-0957173B1F44</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>1E69ABFC-D5CD-3EA7-1F72-FC32DFD1B1AA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="student_id" id="843E3D3F-ED8A-2EA1-5ACB-B4E98ADBD183">
+<sourceDDLFile>task 1.ddl</sourceDDLFile>
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:26:11 UTC</createdTime>
+<ownerDesignName>Lab 7 task 1 22k4080</ownerDesignName>
+<importedID>017F06AC-12A5-848E-1AAD-1B17C00B9E83</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>1E69ABFC-D5CD-3EA7-1F72-FC32DFD1B1AA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="course_id" id="18051A7D-BC7D-896B-E372-E7CC7D511968">
+<sourceDDLFile>task 1.ddl</sourceDDLFile>
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:26:11 UTC</createdTime>
+<ownerDesignName>Lab 7 task 1 22k4080</ownerDesignName>
+<importedID>46655EF1-3838-35D8-D747-81CCDC94A6DA</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>1E69ABFC-D5CD-3EA7-1F72-FC32DFD1B1AA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date" id="C799C5BE-F0FD-DDD9-3C16-E1EDBC41BE18">
+<sourceDDLFile>task 1.ddl</sourceDDLFile>
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:26:11 UTC</createdTime>
+<ownerDesignName>Lab 7 task 1 22k4080</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+<importedID>E7C0B90A-CFBC-02E7-A3C2-11E29B2B92C6</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>A8687623-940D-8563-81DB-BD7415AFDDE0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="course_id1" id="2BA86D11-F5BC-6FD3-FBBA-94BBCC58D1D7">
+<sourceDDLFile>task 1.ddl</sourceDDLFile>
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:26:11 UTC</createdTime>
+<ownerDesignName>Lab 7 task 1 22k4080</ownerDesignName>
+<importedID>EE0174DF-7517-F0E8-14CB-02D119303480</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>1E69ABFC-D5CD-3EA7-1F72-FC32DFD1B1AA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="course_name_course_id" id="07F17AD3-EFCB-054A-4372-86ED615E7247">
+<sourceDDLFile>task 1.ddl</sourceDDLFile>
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:26:11 UTC</createdTime>
+<ownerDesignName>Lab 7 task 1 22k4080</ownerDesignName>
+<importedID>194820FD-AC54-4334-3998-C63D6658A5BF</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>1E69ABFC-D5CD-3EA7-1F72-FC32DFD1B1AA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DCB8578E-A4DA-9D97-DBEF-BBDBA9A02B90" referredColumn="4CDCB130-88D1-FA91-0168-1D23302C91E5"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="09016974-C887-8A62-07F7-3B8F895E700C" name="registeration_pk">
+<sourceDDLFile>task 1.ddl</sourceDDLFile>
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:26:11 UTC</createdTime>
+<ownerDesignName>Lab 7 task 1 22k4080</ownerDesignName>
+<importedID>4BC6C25A-1243-D869-6923-8363BE6A0250</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C0137D95-70AC-CDE3-9BFE-AB2F15068CB2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="28B4D89C-6279-0FC2-EFE9-69D03DF6DA0C" name="registeration_course_name_fk">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:26:11 UTC</createdTime>
+<ownerDesignName>Lab 7 task 1 22k4080</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="07F17AD3-EFCB-054A-4372-86ED615E7247"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

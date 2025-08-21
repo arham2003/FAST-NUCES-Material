@@ -1,0 +1,23 @@
+INCLUDE Irvine32.inc
+askForInteger PROTO C
+display PROTO C, value:DWORD, number: DWORD, counter: DWORD
+.data
+intVal DWORD ?
+.code
+logicForTable PROC C
+	INVOKE askForInteger
+	mov intVal, eax  ;intVal = 5  ;value of return is stored in eax
+	mov ecx, 10
+	mov ebx, 1		; where ebx = 1,2,3,...,10
+	L1:
+		push ecx
+		imul eax, ebx ; 5 x 1 = 5 = eax , 5 x 2 = 10 = eax
+		INVOKE display, eax, intVal, ebx
+		mov eax, intVal
+		inc ebx
+		pop ecx
+		loop L1
+		ret
+logicForTable ENDP
+END
+

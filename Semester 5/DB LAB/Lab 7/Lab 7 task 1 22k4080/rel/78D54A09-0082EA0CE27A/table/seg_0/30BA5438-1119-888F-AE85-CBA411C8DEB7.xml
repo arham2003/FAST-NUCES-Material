@@ -1,0 +1,133 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="30BA5438-1119-888F-AE85-CBA411C8DEB7" name="grade">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:30:02 UTC</createdTime>
+<generatorID>0F49CDE5-886F-4F8E-5404-27F9BD8A4CA7</generatorID>
+<ownerDesignName>Lab 7 task 1 22k4080</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="marks" id="E0EBB47F-7C36-3790-018B-E6966363788B">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:30:02 UTC</createdTime>
+<generatorID>6EB123D9-77AA-70FE-EB95-2FDC25DF6693</generatorID>
+<ownerDesignName>Lab 7 task 1 22k4080</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>1E69ABFC-D5CD-3EA7-1F72-FC32DFD1B1AA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="gpa" id="12128719-7D8F-EE3E-8547-F1B9A5BACD5C">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:30:02 UTC</createdTime>
+<generatorID>C7A896AA-B882-B45E-8502-52615EB3352D</generatorID>
+<ownerDesignName>Lab 7 task 1 22k4080</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<domain>E028EE5F-BF01-DF27-7266-50E0B2A34BBB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="student_id" id="EA18151A-42B0-0051-3450-E5490FE61703">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:30:02 UTC</createdTime>
+<generatorID>BDF9A3D7-18D8-8664-6E9D-C70A12760919</generatorID>
+<ownerDesignName>Lab 7 task 1 22k4080</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>1E69ABFC-D5CD-3EA7-1F72-FC32DFD1B1AA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="course_id" id="B8D1CEF8-99F3-BB9D-5459-98738E589F38">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:30:02 UTC</createdTime>
+<generatorID>CB70E594-F4B0-F88F-ADFC-85569024DFB1</generatorID>
+<ownerDesignName>Lab 7 task 1 22k4080</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>1E69ABFC-D5CD-3EA7-1F72-FC32DFD1B1AA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="student_id1" id="CE8355C6-F6F0-584C-5032-A024D7F06CB5">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:30:02 UTC</createdTime>
+<generatorID>19354C6F-0162-5A25-CC0D-BC19F55F3329</generatorID>
+<ownerDesignName>Lab 7 task 1 22k4080</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>1E69ABFC-D5CD-3EA7-1F72-FC32DFD1B1AA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="exam_exam_name" id="5E69BBF4-A6EA-8359-567E-47F43A88DCD7">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:30:02 UTC</createdTime>
+<generatorID>E24508A6-CCAE-259A-2549-388F8CAD615C</generatorID>
+<ownerDesignName>Lab 7 task 1 22k4080</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DBCF3673-7147-644F-4C9B-92496AAB5285</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E671C21D-BF78-358C-5F24-5DEF151B959F" referredColumn="76039EAE-DEA5-9184-B38E-F2F5B55B614A"/>
+</associations>
+</Column>
+<Column name="students_student_id" id="8580B88E-6A8B-A31B-1B9F-F95994C26D68">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:30:02 UTC</createdTime>
+<generatorID>C693BA6B-71C4-9358-1D42-C536EBA36448</generatorID>
+<ownerDesignName>Lab 7 task 1 22k4080</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>1E69ABFC-D5CD-3EA7-1F72-FC32DFD1B1AA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EED45BD8-9545-FB13-D7D6-04350C6DCD66" referredColumn="AE5B3BCC-66AB-E2BC-7F08-D7F2CB0C23EF"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="63413A6F-9A1F-DAF2-F108-CE8718959498" name="grade_PK">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:30:02 UTC</createdTime>
+<generatorID>47E1F864-464A-5F2E-B546-EAF1C5AE9E66</generatorID>
+<ownerDesignName>Lab 7 task 1 22k4080</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EA18151A-42B0-0051-3450-E5490FE61703"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0D6D2681-EF63-3CA4-B0BC-8C8D9983BFA1" name="grade_exam_FK">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:30:02 UTC</createdTime>
+<generatorID>0E5C5713-09FF-1128-5C70-E624A9C93FD8</generatorID>
+<ownerDesignName>Lab 7 task 1 22k4080</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5E69BBF4-A6EA-8359-567E-47F43A88DCD7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="271EB35F-91EF-50AD-1A02-92CE7F3B36FC" name="grade_students_FK">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:30:02 UTC</createdTime>
+<generatorID>11D9927A-E808-FDBC-7FA8-E3F74884D61A</generatorID>
+<ownerDesignName>Lab 7 task 1 22k4080</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8580B88E-6A8B-A31B-1B9F-F95994C26D68"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

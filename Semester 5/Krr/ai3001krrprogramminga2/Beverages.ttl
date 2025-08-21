@@ -1,0 +1,64 @@
+@prefix : <http://example.org/beverages#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# Define main beverage categories
+:Beverage rdf:type rdfs:Class ;
+          rdfs:label "Beverage" .
+
+:HotBeverage rdf:type rdfs:Class ;
+             rdfs:subClassOf :Beverage ;
+             rdfs:label "Hot Beverage" .
+
+:ColdBeverage rdf:type rdfs:Class ;
+              rdfs:subClassOf :Beverage ;
+              rdfs:label "Cold Beverage" .
+
+# Define subcategories within Hot Beverages
+:Tea rdf:type rdfs:Class ;
+     rdfs:subClassOf :HotBeverage ;
+     rdfs:label "Tea" .
+
+:Coffee rdf:type rdfs:Class ;
+        rdfs:subClassOf :HotBeverage ;
+        rdfs:label "Coffee" .
+
+# Define specific types of tea
+:GreenTea rdf:type :Tea ;
+          rdfs:label "Green Tea" .
+
+:BlackTea rdf:type :Tea ;
+          rdfs:label "Black Tea" .
+
+# Define specific types of coffee
+:Espresso rdf:type :Coffee ;
+          rdfs:label "Espresso" .
+
+:Cappuccino rdf:type :Coffee ;
+            rdfs:label "Cappuccino" .
+
+:Latte rdf:type :Coffee ;
+       rdfs:label "Latte" .
+
+# Define subcategories within Cold Beverages
+:Juice rdf:type rdfs:Class ;
+       rdfs:subClassOf :ColdBeverage ;
+       rdfs:label "Juice" .
+
+:Soda rdf:type rdfs:Class ;
+      rdfs:subClassOf :ColdBeverage ;
+      rdfs:label "Soda" .
+
+# Define specific types of juice
+:OrangeJuice rdf:type :Juice ;
+             rdfs:label "Orange Juice" .
+
+:AppleJuice rdf:type :Juice ;
+            rdfs:label "Apple Juice" .
+
+# Define specific types of soda
+:Cola rdf:type :Soda ;
+      rdfs:label "Cola" .
+
+:LemonSoda rdf:type :Soda ;
+           rdfs:label "Lemon Soda" .

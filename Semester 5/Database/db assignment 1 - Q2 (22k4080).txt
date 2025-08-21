@@ -1,0 +1,68 @@
+-- Q2 a):
+
+Select d.d_name from Doctor d, Operation_Room o
+Where d.d_id = o.d_id AND o.room = 'R-11';
+
+
+-- Q2 b):
+
+Select p.p_name from Patient p, Hospital h
+Where p.h_id = h.h_id AND
+(p.age > 15 AND h.h_name = 'AKU' AND h.location = 'Karachi');
+
+-- Q2 c):
+
+
+select Count(*) From Hospital
+Where h_name = 'AKU';
+
+-- Q2 d):
+
+Select d.* from Doctor d, Operation_Room o
+Group by o.room
+Having Count(o.d_id) > 1;
+
+-- Q2 e):
+
+Select h.h_name, count(p.p_num) AS "No. of Patients" From Hospital h, Patient p
+Where p.h_id = h.h_id
+Group By h.h_name
+Order by Count(p.p_num) DESC;
+
+-- Q2 f):
+
+Select p_name from Patient
+Where h_id NOT IN 
+(Select h_id from Hospital Where h_name = 'AKU');
+
+-- Q2 g)
+
+Select * from Patient
+Where h_id  =
+(Select h_id from Hospital Where h_name = 'Liaquat' AND location = 'Lahore');
+
+-- Q2 h):
+
+
+Select p.p_num, p.p_name from Patient p, Doctor d
+Where p.h_id = d.h_id AND d.d_dname = 'Dr. Muhammad Rafi';
+
+-- Q2 i):
+
+
+select d_name from Doctor d, Operation room o
+where d.d_id = o.d_id AND o.room NOT IN 'R-109';
+
+-- Q2 j): 
+
+
+Select p.p_name from Patient P, Surgery_Details s
+Where P.p_num = s.p_num
+group by P.p_num Having Count(s.o_name) = 
+(Select Max(surgery_count) 
+  from (select Count(sd.o_name) AS "surgery_count" from surgery_details sd
+        group by sd.p_num)
+);
+
+
+

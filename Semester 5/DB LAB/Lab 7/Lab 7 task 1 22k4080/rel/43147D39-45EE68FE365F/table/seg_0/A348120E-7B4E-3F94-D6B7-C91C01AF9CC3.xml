@@ -1,0 +1,164 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A348120E-7B4E-3F94-D6B7-C91C01AF9CC3" name="exam">
+<sourceDDLFile>task 1.ddl</sourceDDLFile>
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:26:11 UTC</createdTime>
+<ownerDesignName>Lab 7 task 1 22k4080</ownerDesignName>
+<importedID>3D0DEB30-8492-197A-5EC0-17A22F8C5D35</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="exam_name" id="7967466F-0302-4A89-ECFE-8B8F7ABA1F84">
+<sourceDDLFile>task 1.ddl</sourceDDLFile>
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:26:11 UTC</createdTime>
+<ownerDesignName>Lab 7 task 1 22k4080</ownerDesignName>
+<importedID>75E560E1-A3B8-5890-D5E5-5B7F70490F29</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DBCF3673-7147-644F-4C9B-92496AAB5285</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="type" id="8FC4AEAA-BF0F-E85E-BFD1-EB48E08F1C60">
+<sourceDDLFile>task 1.ddl</sourceDDLFile>
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:26:11 UTC</createdTime>
+<ownerDesignName>Lab 7 task 1 22k4080</ownerDesignName>
+<importedID>DF905D28-7424-4D4D-77B8-B613B9E0633C</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DBCF3673-7147-644F-4C9B-92496AAB5285</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="student_id" id="D9D4D366-8461-AC88-8271-4472F5BD121B">
+<sourceDDLFile>task 1.ddl</sourceDDLFile>
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:26:11 UTC</createdTime>
+<ownerDesignName>Lab 7 task 1 22k4080</ownerDesignName>
+<importedID>34FF8593-B22B-02BE-62CC-9429D32CC2E0</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>1E69ABFC-D5CD-3EA7-1F72-FC32DFD1B1AA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="course_id" id="869B0827-D1C1-F4A9-F1C9-979907427126">
+<sourceDDLFile>task 1.ddl</sourceDDLFile>
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:26:11 UTC</createdTime>
+<ownerDesignName>Lab 7 task 1 22k4080</ownerDesignName>
+<importedID>C4F8042E-9F24-826E-F373-283DD62E3323</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>1E69ABFC-D5CD-3EA7-1F72-FC32DFD1B1AA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date" id="A73718C7-92E3-FD95-5D70-480B84C63114">
+<sourceDDLFile>task 1.ddl</sourceDDLFile>
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:26:11 UTC</createdTime>
+<ownerDesignName>Lab 7 task 1 22k4080</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+<importedID>F78B7672-16F8-115F-F858-759A803D2F50</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>A8687623-940D-8563-81DB-BD7415AFDDE0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="timing" id="92FAA445-6CDE-2A68-7178-5FCF8AAABB5D">
+<sourceDDLFile>task 1.ddl</sourceDDLFile>
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:26:11 UTC</createdTime>
+<ownerDesignName>Lab 7 task 1 22k4080</ownerDesignName>
+<importedID>9D7B051C-AB6B-5DF6-AEBB-D2BEA8A6C0C6</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>A8687623-940D-8563-81DB-BD7415AFDDE0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="course_id1" id="7F46E655-5FD8-3D25-A3C9-28AF249D5807">
+<sourceDDLFile>task 1.ddl</sourceDDLFile>
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:26:11 UTC</createdTime>
+<ownerDesignName>Lab 7 task 1 22k4080</ownerDesignName>
+<importedID>77422ED0-8745-889F-718B-BB08D92CB752</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>1E69ABFC-D5CD-3EA7-1F72-FC32DFD1B1AA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="course_name_course_id" id="BBBB9131-F497-3D1A-4525-45B2F36A279A">
+<sourceDDLFile>task 1.ddl</sourceDDLFile>
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:26:11 UTC</createdTime>
+<ownerDesignName>Lab 7 task 1 22k4080</ownerDesignName>
+<importedID>C0ED6C18-C4C8-EDAF-3EA7-D611EBB4118D</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>1E69ABFC-D5CD-3EA7-1F72-FC32DFD1B1AA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7CA5B8C0-DF59-F716-46F5-7372F71DFA0D" referredColumn="4CDCB130-88D1-FA91-0168-1D23302C91E5"/>
+</associations>
+</Column>
+<Column name="students_student_id" id="E0BFB46B-724A-EC4F-76FF-1BB63376C8BE">
+<sourceDDLFile>task 1.ddl</sourceDDLFile>
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:26:11 UTC</createdTime>
+<ownerDesignName>Lab 7 task 1 22k4080</ownerDesignName>
+<importedID>543CCE02-AD45-154E-EC53-C93A11EF73D2</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>1E69ABFC-D5CD-3EA7-1F72-FC32DFD1B1AA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B426AE92-485C-570A-A426-2221342897D8" referredColumn="BE88424C-63C0-B559-362B-31F9BB61A960"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="82971C14-1970-90F8-00B2-3ABB4551ACC5" name="exam_pk">
+<sourceDDLFile>task 1.ddl</sourceDDLFile>
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:26:11 UTC</createdTime>
+<ownerDesignName>Lab 7 task 1 22k4080</ownerDesignName>
+<importedID>C3487E15-86E0-882E-EE40-867389B8EFC9</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7967466F-0302-4A89-ECFE-8B8F7ABA1F84"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2C2EBEC0-4D05-6831-E629-32EE6178CB44" name="exam_course_name_fk">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:26:11 UTC</createdTime>
+<ownerDesignName>Lab 7 task 1 22k4080</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BBBB9131-F497-3D1A-4525-45B2F36A279A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DACDBE5B-CECE-2F88-9D2B-9895881D8D28" name="exam_students_fk">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:26:11 UTC</createdTime>
+<ownerDesignName>Lab 7 task 1 22k4080</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E0BFB46B-724A-EC4F-76FF-1BB63376C8BE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

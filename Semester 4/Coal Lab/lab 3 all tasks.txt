@@ -1,0 +1,90 @@
+COMMENT @
+;lab 3 - Task 01
+val1 SWORD ?
+val2 SBYTE -11
+
+;lab 3 - TAsk 02
+; 2^31 = 2147483648
+val3 SDWORD -2147483648
+
+;lab 3 - TASK 03
+Favcolor BYTE "Orange", 0
+A WORD 12
+B WORD 2
+C WORD 13
+D WORD 8
+E WORD 14
+@
+
+;lab 3 - Task 04
+a DWORD 11h
+b DWORD 10h
+e DWORD 30h
+d DWORD 40h
+	
+.code
+main PROC
+
+mov eax, 0
+mov ebx, 0
+mov ebx, a
+add ebx, b
+
+mov eax, a
+sub eax, b
+
+sub eax, ebx
+
+add ebx, e
+add ebx, d
+mov eax, ebx
+call writedec
+
+;lab 3 - Task 05
+.data
+
+a BYTE 00010001b
+b BYTE 00010000b
+e BYTE 00110000b
+d BYTE 01000000b
+
+.code
+main PROC
+
+mov eax, 0
+mov ebx, 0
+movzx eax, a
+movzx ebx, b
+add ebx, eax
+
+movzx eax, a
+movzx ecx, b
+sub eax, ecx
+
+sub ebx, eax
+
+movzx ecx, e
+add ebx, ecx
+
+movzx edx, d
+add ebx, edx
+
+mov eax, ebx
+call writedec
+
+;Lab 03 - Task 06
+.data
+wArray WORD 13d, 14d, 16d
+
+;lab 03 - Task 07
+.data
+uninitArr DWORD 50 DUP(?)
+
+;lab 03 - Task 08
+.data
+testString BYTE "TEST", 0
+repTest BYTE 500 DUP('TEST')
+
+;lab 03 - Task 9
+.data
+bArray BYTE 20 dup(0)

@@ -1,0 +1,18 @@
+acl commands:
+
+config t
+access-list 1 permit 10.0.0.2 0.0.0.0
+access-list 1 deny 40.0.0.2 0.0.0.0
+int se2/0
+ip access-group 1 out
+exit
+
+extended acl commands:
+
+config t
+access-list 110 deny icmp host 40.0.0.2 any echo
+access-list 110 permit icmp any host 40.0.0.2 echo-reply
+access-list 110 permit ip any any
+
+int se2/0
+ip access-group 110 out  --> for outbound

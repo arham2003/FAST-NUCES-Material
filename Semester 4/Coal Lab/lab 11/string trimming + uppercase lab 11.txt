@@ -1,0 +1,18 @@
+INCLUDE Irvine32.inc
+
+.data
+alpha BYTE "abcdefgh",0
+
+string1 BYTE "hellooo", 0
+
+.code
+main PROC
+
+;Invoke Str_trim, ADDR string1, "o"
+INVOKE Str_UCASE,ADDR string1
+lea edx, string1
+call writestring
+
+exit
+main ENDP
+END main

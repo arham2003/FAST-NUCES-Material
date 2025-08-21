@@ -1,0 +1,22 @@
+INCLUDE Irvine32.inc
+
+.data
+table BYTE 1,2,3,4,5
+rowSize = ($-table)  ;5
+		BYTE 6,7,8,9,10 ;5 *1
+		BYTE 11,12,13,14
+.code
+main PROC
+
+	rowIndex = 1
+	colIndex = 2
+
+	mov esi, offset table ; 1
+	add esi, rowSize * rowIndex ; 1 + 5*1
+	mov al, [esi + colIndex * TYPE table]
+	;		6 + 2 * 1 = 8
+	movzx eax, al
+	call writeDec
+exit
+main ENDP
+END main

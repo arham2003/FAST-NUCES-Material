@@ -1,0 +1,47 @@
+-- lab12
+vlan switch commands:
+
+config t
+vlan 10
+name EE
+vlan 20
+name CS
+vlan 30 
+name ACD
+exit
+
+config t 
+int fa0/2
+switchport mode access
+switchport access vlan 10
+int fa0/4
+switchport mode access
+switchport access vlan 20
+int fa0/5
+switchport mode access
+switchport access vlan 30
+
+
+between 2 switches and for inter-vlan (trunking):
+
+config t
+int fa0/1
+switchport mode trunk
+
+
+-- router config :
+
+config t
+int fa0/0
+no shut
+
+config t
+int fa0/0.10
+encapsulation dot1q 10
+ip address 10.0.0.1 255.0.0.0  --> gateway for vlan 10 pcs
+int fa0/0.20
+encapsulation dot1q 20
+ip address 20.0.0.1 255.0.0.0
+int fa0/0.30
+encapsulation dot1q 30
+ip address 30.0.0.1 255.0.0.0

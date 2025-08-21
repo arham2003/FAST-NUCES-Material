@@ -1,0 +1,5 @@
+read_from_file:-
+	open('data.txt', read. Strea),
+	read(Stream, Data),
+	write(Data), nl,
+	close(Stream).

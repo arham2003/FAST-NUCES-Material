@@ -1,0 +1,5 @@
+cost/loc: $13.33
+effort required: 13.3 person month
+
+project cost: total loc * (cost/loc)
+		$106400

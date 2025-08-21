@@ -1,0 +1,138 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1452C35B-79F8-5FB9-67CC-7822F17FE63B" name="booking">
+<sourceDDLFile>task2.ddl</sourceDDLFile>
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:21:23 UTC</createdTime>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<importedID>BA728152-6DC4-F0BD-983F-6403CE17E041</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="booking_id" id="A34DD67B-F5B7-59F0-C9C1-791313E93E2C">
+<sourceDDLFile>task2.ddl</sourceDDLFile>
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:21:23 UTC</createdTime>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<importedID>B26DCB9D-5F4F-C888-0F2B-DDDF0B8A1A27</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>34028724-FEF8-B7C0-3C41-DE3CCB1FF039</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="meal_id" id="FF0011B0-5AF6-2B0C-F46E-CB3577572E10">
+<sourceDDLFile>task2.ddl</sourceDDLFile>
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:21:23 UTC</createdTime>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<importedID>E7CF31DE-6034-1A1F-0E13-24020A16ADE8</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>34028724-FEF8-B7C0-3C41-DE3CCB1FF039</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="resident_id" id="DD3BBC40-7A11-1C24-B44A-BE239CB1CD95">
+<sourceDDLFile>task2.ddl</sourceDDLFile>
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:21:23 UTC</createdTime>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<importedID>6CB885A6-211D-E8F8-F6B3-EB97687AA27D</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>34028724-FEF8-B7C0-3C41-DE3CCB1FF039</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="booking_date" id="E8F54201-F519-B694-90CF-097297C88F2F">
+<sourceDDLFile>task2.ddl</sourceDDLFile>
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:21:23 UTC</createdTime>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<importedID>1AC01289-B790-A250-0E44-3D4B88D13820</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>DF668A09-B4EE-FF4F-B323-BD49143C69E4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="booking_time" id="FC3F04B1-E553-CCA7-721E-C441C787896A">
+<sourceDDLFile>task2.ddl</sourceDDLFile>
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:21:23 UTC</createdTime>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<importedID>8CC67179-7A1A-26AE-1BFC-B02DF5497A5B</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>DF668A09-B4EE-FF4F-B323-BD49143C69E4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hostel_residents_id" id="AB772D3A-897F-59CA-A103-6D6DF7D991E0">
+<sourceDDLFile>task2.ddl</sourceDDLFile>
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:21:23 UTC</createdTime>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<importedID>C8C1A8ED-AE2B-D56C-0250-50D34262674E</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>34028724-FEF8-B7C0-3C41-DE3CCB1FF039</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5633B159-245E-3AC0-8868-52796BFF4D32" referredColumn="F5404F19-DC48-DCCF-4DFE-BC4152408C45"/>
+</associations>
+</Column>
+<Column name="meal_operation_operation_id" id="875C28DA-EED1-FD9A-3F26-F161FEC258B3">
+<sourceDDLFile>task2.ddl</sourceDDLFile>
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:21:23 UTC</createdTime>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<importedID>F9880A33-E5FF-38AF-DCB6-78057F214FCF</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>34028724-FEF8-B7C0-3C41-DE3CCB1FF039</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B752F501-733D-006A-E1DE-CEB215D9F3A7" referredColumn="5A592D77-8B50-0361-1D50-11B225E0D04C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B7BCAD79-856A-F62F-054F-26AEF1C5EAE3" name="booking_pk">
+<sourceDDLFile>task2.ddl</sourceDDLFile>
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:21:23 UTC</createdTime>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<importedID>FA8B05DE-C0BE-8AD3-76FD-167119C02BD6</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A34DD67B-F5B7-59F0-C9C1-791313E93E2C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9535DFE9-71E0-1711-CFFD-6423EEF12C28" name="booking_hostel_residents_fk">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:21:23 UTC</createdTime>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AB772D3A-897F-59CA-A103-6D6DF7D991E0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4FFD11F7-95D0-1FDE-7CE9-B0046F128601" name="booking_meal_operation_fk">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:21:23 UTC</createdTime>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="875C28DA-EED1-FD9A-3F26-F161FEC258B3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,4 @@
+route(a, b, 100).
+route(b, c, 150).
+route(c, d, 200).
+end.

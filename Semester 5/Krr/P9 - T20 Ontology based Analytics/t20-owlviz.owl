@@ -1,0 +1,213 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/user/ontologies/2022/11/untitled-ontology-12#"
+     xml:base="http://www.semanticweb.org/user/ontologies/2022/11/untitled-ontology-12"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/user/ontologies/2022/11/untitled-ontology-12"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/11/untitled-ontology-12#hasInnings -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2022/11/untitled-ontology-12#hasInnings">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2022/11/untitled-ontology-12#t20cricket"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2022/11/untitled-ontology-12#1st_Innings_T20"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2022/11/untitled-ontology-12#2nd_Innings_T20"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/11/untitled-ontology-12#t20cricket -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/11/untitled-ontology-12#t20cricket"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/11/untitled-ontology-12#1_balls -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/11/untitled-ontology-12#1_balls">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/11/untitled-ontology-12#1st_Innings_T20"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/11/untitled-ontology-12#1_battingTeam -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/11/untitled-ontology-12#1_battingTeam">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/11/untitled-ontology-12#1st_Innings_T20"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/11/untitled-ontology-12#1_bowlingTeam -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/11/untitled-ontology-12#1_bowlingTeam">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/11/untitled-ontology-12#1st_Innings_T20"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/11/untitled-ontology-12#1_city -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/11/untitled-ontology-12#1_city">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/11/untitled-ontology-12#1st_Innings_T20"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/11/untitled-ontology-12#1_matchId -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/11/untitled-ontology-12#1_matchId">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/11/untitled-ontology-12#1st_Innings_T20"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/11/untitled-ontology-12#1_player_out -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/11/untitled-ontology-12#1_player_out">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/11/untitled-ontology-12#1st_Innings_T20"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/11/untitled-ontology-12#1_runs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/11/untitled-ontology-12#1_runs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/11/untitled-ontology-12#1st_Innings_T20"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/11/untitled-ontology-12#1_tossWinner -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/11/untitled-ontology-12#1_tossWinner">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/11/untitled-ontology-12#1st_Innings_T20"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/11/untitled-ontology-12#1_venue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/11/untitled-ontology-12#1_venue">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/11/untitled-ontology-12#1st_Innings_T20"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/11/untitled-ontology-12#1st_Innings_T20 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/11/untitled-ontology-12#1st_Innings_T20">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/11/untitled-ontology-12#t20cricket"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/11/untitled-ontology-12#2_balls -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/11/untitled-ontology-12#2_balls">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/11/untitled-ontology-12#2nd_Innings_T20"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/11/untitled-ontology-12#2_battingTeam -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/11/untitled-ontology-12#2_battingTeam">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/11/untitled-ontology-12#2nd_Innings_T20"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/11/untitled-ontology-12#2_bowlingTeam -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/11/untitled-ontology-12#2_bowlingTeam">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/11/untitled-ontology-12#2nd_Innings_T20"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/11/untitled-ontology-12#2_city -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/11/untitled-ontology-12#2_city">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/11/untitled-ontology-12#2nd_Innings_T20"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/11/untitled-ontology-12#2_matchId -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/11/untitled-ontology-12#2_matchId">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/11/untitled-ontology-12#2nd_Innings_T20"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/11/untitled-ontology-12#2_player_out -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/11/untitled-ontology-12#2_player_out">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/11/untitled-ontology-12#2nd_Innings_T20"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/11/untitled-ontology-12#2_runs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/11/untitled-ontology-12#2_runs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/11/untitled-ontology-12#2nd_Innings_T20"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/11/untitled-ontology-12#2_tossWinner -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/11/untitled-ontology-12#2_tossWinner">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/11/untitled-ontology-12#2nd_Innings_T20"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/11/untitled-ontology-12#2_venue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/11/untitled-ontology-12#2_venue">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/11/untitled-ontology-12#2nd_Innings_T20"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/11/untitled-ontology-12#2nd_Innings_T20 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/11/untitled-ontology-12#2nd_Innings_T20">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/11/untitled-ontology-12#t20cricket"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

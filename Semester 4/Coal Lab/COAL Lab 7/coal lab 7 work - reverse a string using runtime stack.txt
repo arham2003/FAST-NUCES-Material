@@ -1,0 +1,44 @@
+; Reverse String using runtime stack
+INCLUDE Irvine32.inc
+
+.data
+
+string BYTE "Your text goes here",0
+
+
+.code
+main PROC
+
+; getting counter value from length of string
+mov ecx, LENGTHOF string - 1
+mov eax, ecx
+call writedec
+call crlf
+
+; starting address of the string
+mov esi, OFFSET string
+
+; loop to push characters into stack
+l1:
+movzx eax, BYTE PTR [esi]
+push eax
+inc esi
+loop l1
+
+;saving reversed string
+
+mov ecx, LENGTHOF string -1
+mov esi, OFFSET string
+
+l2:
+pop eax
+mov [esi], eax
+inc esi
+loop l2
+
+mov edx, OFFSET string
+call writestring
+
+exit
+main ENDP
+END main

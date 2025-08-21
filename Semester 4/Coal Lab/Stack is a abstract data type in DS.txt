@@ -1,0 +1,9 @@
+Stack is a abstract data type in DSA.
+
+RUNTIME STACK:
+Directly managed by the CPU.
+lets say:
+arr[100]
+
+push ke case mei decrement krenge
+pop ke case mei increment as top pointer is from top to down.

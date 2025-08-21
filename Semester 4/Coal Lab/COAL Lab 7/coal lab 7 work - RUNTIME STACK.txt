@@ -1,0 +1,55 @@
+; RUNTIME STACK
+INCLUDE Irvine32.inc
+
+.code
+main PROC
+
+COMMENT @
+push 35
+push 45
+push 55
+push 65
+push 75 ; top=75
+@
+
+mov ecx, 5
+mov eax, 35
+
+l1:
+push eax
+add eax, 10
+loop l1
+
+mov ecx, 5
+
+l2:
+pop eax
+call writedec
+call crlf
+loop l2
+
+COMMENT @
+pop eax
+call writedec
+call crlf
+
+pop eax
+call writedec
+call crlf
+
+pop eax
+call writedec
+call crlf
+
+pop eax
+call writedec
+call crlf
+
+pop eax
+call writedec
+call crlf
+@
+
+exit
+main ENDP
+END main

@@ -1,0 +1,43 @@
+telnet commands for switch:
+
+config t
+interface vlan 1
+ip address 40.80.3.0 255.0.0.0  (giving each switch an ip)
+no shut
+exit
+
+line vty 0 15
+password cisco
+login
+end
+
+ *if enable password needed:
+config t
+enable password cs
+exit
+
+-- telnet access:
+telnet 40.80.3.0
+
+-- ssh commands for router:
+
+config t
+hostname router1
+ip domain name ai-students-router
+crypto key generate rsa
+1024
+
+username admin secret abc
+line vty 0 4
+transport input ssh
+login local
+exit
+ip ssh version 2
+exit
+
+-- ssh connect command:
+ssh -l admin 41.80.1.0
+
+-- show command:
+show ip interface brief
+

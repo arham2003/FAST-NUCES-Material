@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="557580A2-C7B5-6B74-4245-FFA770F1C4C1" containerWithKeyObject="C4D25F6B-C7F3-10D0-C17B-8EE65B1634A5" localFKIndex="0760E3CA-7CF4-B0B9-AFF4-21E62A089777" name="hostel_residents_hostel_fk">
+<sourceDDLFile>task2.ddl</sourceDDLFile>
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:21:23 UTC</createdTime>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<importedID>FDF91300-0273-01DB-E68C-06F4EC62E9DE</importedID>
+<referredTableLongName>hostel</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>1A481859-E9A8-6142-C471-F4FD42D175FF</referredTableID>
+<keyObject>BAF376CD-DC7A-A2F6-6A45-0501987F551F</keyObject>
+<referredKeyID>BAF376CD-DC7A-A2F6-6A45-0501987F551F</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>hostel_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

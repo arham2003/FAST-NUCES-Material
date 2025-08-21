@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6697B658-5C88-E1FA-75EB-AFF920B30702" name="feedback">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:21:40 UTC</createdTime>
+<generatorID>BC297DC4-CB01-E533-0831-7E38B771FE3D</generatorID>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<engineerTo>
+<item key="D5CD0DFE-326C-7965-2969-190CA6D77B91" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="feedback id" id="FB9BB7A6-8E40-DC0D-C3BD-B4B1F307F248">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:21:40 UTC</createdTime>
+<generatorID>432F9403-862C-91C9-EC43-590189A326CB</generatorID>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<engineerTo>
+<item key="D5CD0DFE-326C-7965-2969-190CA6D77B91" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>34028724-FEF8-B7C0-3C41-DE3CCB1FF039</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="resident id" id="6805B076-5953-13EA-D4BF-6F5EC1CBF09A">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:21:40 UTC</createdTime>
+<generatorID>46D9CBC1-61EF-6FED-93DF-065655B62E25</generatorID>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<engineerTo>
+<item key="D5CD0DFE-326C-7965-2969-190CA6D77B91" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>34028724-FEF8-B7C0-3C41-DE3CCB1FF039</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="feedback" id="1B92386D-5160-F875-73E2-BD4945B43C09">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:21:40 UTC</createdTime>
+<generatorID>C18D09E8-A75B-F6C9-5488-29F5E1018FA7</generatorID>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<engineerTo>
+<item key="D5CD0DFE-326C-7965-2969-190CA6D77B91" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>067B1D5B-1B71-22D2-339E-32357FFE1050</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="hostel residents id" id="742AAE99-63B9-BD45-34EC-F3620AFC961E">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:21:40 UTC</createdTime>
+<generatorID>05ACBFB4-5420-C3A6-9A4A-4BD109B1E376</generatorID>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<engineerTo>
+<item key="D5CD0DFE-326C-7965-2969-190CA6D77B91" value="true"/>
+</engineerTo>
+<referedAttribute>F1347160-86BF-3C3D-4AA1-E44D4104F69F</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>34028724-FEF8-B7C0-3C41-DE3CCB1FF039</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="32A3F5CB-6BE7-AFE7-0BDC-06FCE5505E4F" name="feedback pk">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:21:40 UTC</createdTime>
+<generatorID>1AFBFC55-43A5-2B8C-E4CE-E9B8BB3C8FFA</generatorID>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<engineerTo>
+<item key="D5CD0DFE-326C-7965-2969-190CA6D77B91" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>FB9BB7A6-8E40-DC0D-C3BD-B4B1F307F248</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

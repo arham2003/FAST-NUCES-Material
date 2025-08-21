@@ -1,0 +1,2 @@
+#!/bin/bash -> it tells the script which interpreter the script is supposed to use. (first line is not a comment)
+

@@ -1,0 +1,81 @@
+@startuml
+|Main Flow|
+start
+if (User selects login as) then (teacher)
+  :Enter teacher credentials;
+else (student)
+  :Enter student credentials;
+endif
+:Authenticate user;
+if (Credentials are valid?) then (yes)
+  if (User is a student?) then (yes)
+    :Redirect to student dashboard;
+    if (Student selects) then (register course)
+      :Redirect to available courses;
+      if (Course is selected) then (yes)
+        :Register for the course;
+      else (no)
+        stop
+      endif
+    elseif (Student selects) then (view courses)
+      :Redirect to registered courses;
+      if (Course is selected) then (yes)
+        :View playlist for the course;
+        :Watch videos;
+        if (Comment or review is added) then (yes)
+          :Add comment or review;
+        else (no)
+          stop
+        endif
+      else (no)
+        stop
+      endif
+    elseif (Student selects) then (about us)
+      :Redirect to about us page;
+    elseif (Student selects) then (contact us)
+      :Redirect to contact us page;
+    else
+      stop
+    endif
+  else (no)
+    :Redirect to teacher dashboard;
+    if (Teacher selects) then (add playlist)
+      :Redirect to add playlist page;
+      if (Playlist details entered) then (yes)
+        :Add playlist;
+      else (no)
+        stop
+      endif
+    elseif (Teacher selects) then (edit playlist)
+      :Redirect to edit playlist page;
+      if (Playlist is edited) then (yes)
+        :Save changes;
+      else (no)
+        stop
+      endif
+    elseif (Teacher selects) then (add video)
+      :Redirect to add video page;
+      if (Video details entered) then (yes)
+        :Add video to playlist;
+      else (no)
+        stop
+      endif
+    elseif (Teacher selects) then (view comments)
+      :Redirect to comments page;
+      :View comments on playlists;
+    elseif (Teacher selects) then (add assignment)
+      :Redirect to add assignment page;
+      if (Assignment details entered) then (yes)
+        :Add assignment to course;
+      else (no)
+        stop
+      endif
+    else
+      stop
+    endif
+  endif
+else (no)
+  :Display error message;
+  stop
+endif
+@enduml

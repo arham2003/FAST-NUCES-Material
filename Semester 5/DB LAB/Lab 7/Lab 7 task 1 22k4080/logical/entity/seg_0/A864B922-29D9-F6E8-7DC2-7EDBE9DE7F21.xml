@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A864B922-29D9-F6E8-7DC2-7EDBE9DE7F21" name="students">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:26:30 UTC</createdTime>
+<generatorID>C214164A-CE7D-497E-3D92-56FC6616FE4B</generatorID>
+<ownerDesignName>Lab 7 task 1 22k4080</ownerDesignName>
+<engineerTo>
+<item key="43147D39-16BF-0AF9-58B2-45EE68FE365F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="name" id="C734E3F9-A227-12DC-4623-5502EADDF257">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:26:30 UTC</createdTime>
+<generatorID>B2C1307C-BAD4-A59C-3AAB-296F5C924653</generatorID>
+<ownerDesignName>Lab 7 task 1 22k4080</ownerDesignName>
+<engineerTo>
+<item key="43147D39-16BF-0AF9-58B2-45EE68FE365F" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DBCF3673-7147-644F-4C9B-92496AAB5285</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="student id" id="FED7A5D8-3796-CCE8-D400-5A721918AA3F">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:26:30 UTC</createdTime>
+<generatorID>BE88424C-63C0-B559-362B-31F9BB61A960</generatorID>
+<ownerDesignName>Lab 7 task 1 22k4080</ownerDesignName>
+<engineerTo>
+<item key="43147D39-16BF-0AF9-58B2-45EE68FE365F" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>1E69ABFC-D5CD-3EA7-1F72-FC32DFD1B1AA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="email" id="3709BF64-3F92-2117-C872-E28DA03E26C0">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:26:30 UTC</createdTime>
+<generatorID>3DEB66B7-F9FD-85A3-CB85-DF39CEE814DE</generatorID>
+<ownerDesignName>Lab 7 task 1 22k4080</ownerDesignName>
+<engineerTo>
+<item key="43147D39-16BF-0AF9-58B2-45EE68FE365F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DBCF3673-7147-644F-4C9B-92496AAB5285</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5EC59A82-201D-3352-8E3E-BABDC31B25F9" name="students pk">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:26:30 UTC</createdTime>
+<generatorID>3C8FA896-E52B-9420-CA22-BEF0C3C33671</generatorID>
+<ownerDesignName>Lab 7 task 1 22k4080</ownerDesignName>
+<engineerTo>
+<item key="43147D39-16BF-0AF9-58B2-45EE68FE365F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>FED7A5D8-3796-CCE8-D400-5A721918AA3F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

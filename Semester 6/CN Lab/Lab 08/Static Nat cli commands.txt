@@ -1,0 +1,9 @@
+// ip nat inside source static <PRIVATE_IP> <PUBLIC_IP>
+Router(config)#ip nat inside source static 192.168.10.2 105.2.0.3
+Router(config)#ip nat inside source static 192.168.10.3 105.2.0.4
+Router(config)#ip nat inside source static 192.168.10.4 105.2.0.5
+Router(config)#interface se0/0/0
+Router(config-if)#ip nat outside
+Router(config-if)#interface fa0/0
+Router(config-if)#ip nat inside
+Router(config)#ip route 0.0.0.0 0.0.0.0 se0/0/0

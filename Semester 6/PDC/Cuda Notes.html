@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>in</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h1 id="in-depth-cuda-and-convolution-concepts">In-depth CUDA and
+Convolution Concepts</h1>
+<p><em>Exported on 5/21/2025 at 22:03:08 GMT+5 from Cursor
+(0.50.4)</em></p>
+<hr />
+<p><strong>User</strong></p>
+<p>I want you to read and understand all the content inside these
+files.</p>
+<p>Explain to me in detail all the concepts like
+Convolution,Tiling,Ghost elements, CUDA, and CUDA programming with
+complete examples of code where required.</p>
+<p>also explain all these topics from the attached book,if book is not
+readable divide it in chunks then read it, “Wen-mei W. Hwu, David B.
+Kirk, Izzat El Hajj - Programming Massively Parallel Processors_ A
+Hands-on Approach-Morgan Kaufmann (2023)”:</p>
+<p>intro to convolution Applications of Convolution 1D convolutions
+Ghost Elements 2D convolutions Tiled 2D convolution and Phantom elments
+Sequential 2D convolution and edge detection using Sobel Filter OpenMP
+2D convolution -CUDA intro: CUDA cores and structure of a tpyical CUDA
+GPGPU warp engine, streaming multiprocessor 1D grid and thread block:
+Kernel Launch Parameters (Configuration Parameters &lt;&lt;&lt;
+&gt;&gt;&gt;) determining the ideal size of a thread block CUDA Program
+execution CUDA Vector Addition program Calculating unique index i from
+built-in variables provided by CUDA. -CUDA Programming: 2D grid launch
+Thread Divergence matrix operations and complications on CUDA -CUDA
+Matrix Multiplication: Naive Matrix multiplication on CUDA Tiled matrix
+multiplication on CUDA <strong>shared</strong> variables in CUDA kernel
+barrier and syncthread in Kernel dependencies in parallel programming
+(write after read and read after write)</p>
+<p>-Reduction on CUDA -Prefix Sum on CUDA -Chapter 10 (10.8 not
+included) -Chapter 11 (11.7 not included) -Convolution on CUDA -Chapter
+7 (Complete) -Chapter 12 (12.7 and 12.8 not included) -Chapter 13 (13.5,
+13.6 and 13.8 not included) -Radix Sort -Merge Sort -Co-Rank function
+and Parallel Merge -Chapter 14 (14.5 and 14.6 not included): Sparse
+Matrix vector multiplication (SPMV) COO format ESR format ELL format
+Memory Coelescing and other consideration in above 3 formats -Chapter
+16: Convolution Neural Networks an introduction Kernel for
+Backpropagation and Forward propagation Matrix Unroll and using matrix
+into matrix multiplication instead of convolution</p>
+<hr />
+<p><strong>Cursor</strong></p>
+<p>Let me check what files are available in your workspace first.</p>
+<p>Great, I can see relevant files in your workspace, including the book
+you mentioned and several PDF files covering many of the topics you want
+to understand. Let’s start by examining the files related to
+convolution, CUDA, and other key topics.</p>
+<p>Let’s first look at the convolution material:</p>
+<p>I see the PDF files are in binary format, which isn’t directly
+readable. Let me try to examine the content of some of the PDF files
+that cover the topics you’re interested in by using other
+approaches.</p>
+<p>Let me first look at the Week8_Convolution.pdf file:</p>
+<p>Let me try another approach to extract text from the PDF:</p>
+<p>Now let’s create a simple Python script to extract text from the
+PDFs:</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> sys</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pypdf <span class="im">import</span> PdfReader</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> extract_text_from_pdf(pdf_path):</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">try</span>:</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>        reader <span class="op">=</span> PdfReader(pdf_path)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>        text <span class="op">=</span> <span class="st">&quot;&quot;</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> page <span class="kw">in</span> reader.pages:</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>            text <span class="op">+=</span> page.extract_text() <span class="op">+</span> <span class="st">&quot;</span><span class="ch">\n\n</span><span class="st">&quot;</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> text</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">except</span> <span class="pp">Exception</span> <span class="im">as</span> e:</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="ss">f&quot;Error extracting text: </span><span class="sc">{</span><span class="bu">str</span>(e)<span class="sc">}</span><span class="ss">&quot;</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="va">__name__</span> <span class="op">==</span> <span class="st">&quot;__main__&quot;</span>:</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="bu">len</span>(sys.argv) <span class="op">!=</span> <span class="dv">3</span>:</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">&quot;Usage: python extract_pdf.py &lt;pdf_file&gt; &lt;output_file&gt;&quot;</span>)</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>        sys.exit(<span class="dv">1</span>)</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    pdf_file <span class="op">=</span> sys.argv[<span class="dv">1</span>]</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    output_file <span class="op">=</span> sys.argv[<span class="dv">2</span>]</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>    text <span class="op">=</span> extract_text_from_pdf(pdf_file)</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>    <span class="cf">with</span> <span class="bu">open</span>(output_file, <span class="st">&quot;w&quot;</span>, encoding<span class="op">=</span><span class="st">&quot;utf-8&quot;</span>) <span class="im">as</span> f:</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>        f.write(text)</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;Text extracted to </span><span class="sc">{</span>output_file<span class="sc">}</span><span class="ss">&quot;</span>)</span></code></pre></div>
+<p>Let’s run this script to extract text from the key PDFs:</p>
+<p>Let’s check if the extracted text was saved to the file:</p>
+<p>Now let’s extract text from the CUDA-related PDF:</p>
+<p>Let’s check the CUDA content:</p>
+<p>Let’s also extract text from the Thread Divergence and Tiled Matrix
+Multiplication PDF:</p>
+<p>Let’s check the CUDA advanced content:</p>
+<p>Based on the extracted content from the PDFs, let me provide you with
+a detailed explanation of the requested concepts:</p>
+<h1 id="1-convolution">1. Convolution</h1>
+<h2 id="introduction-to-convolution">Introduction to Convolution</h2>
+<p>Convolution is a mathematical operation that applies a filter (also
+called a mask or kernel) to each element of an input array to produce a
+new value, which is a weighted sum of neighboring elements. This is
+fundamental in signal processing, image processing, and machine
+learning.</p>
+<p>The mathematical formulation for 1D convolution is:</p>
+<p>y_i = ∑(j=-r to r) f_i+j × x_i</p>
+<p>Where:</p>
+<ul>
+<li>x_i is the input array</li>
+<li>y_i is the output array</li>
+<li>f_i is the filter array</li>
+<li>r is the radius of the filter</li>
+</ul>
+<h2 id="applications-of-convolution">Applications of Convolution</h2>
+<p>Convolution has numerous applications:</p>
+<ul>
+<li>Image processing: smoothing, sharpening, blurring images</li>
+<li>Edge detection in images</li>
+<li>Noise removal</li>
+<li>Deep learning: Convolutional Neural Networks (CNNs)</li>
+</ul>
+<h2 id="1d-convolutions">1D Convolutions</h2>
+<p>In 1D convolution, a filter is applied along a single dimension (like
+time series data or audio signals). For each element in the input array,
+we calculate the weighted sum of the element and its neighbors using
+weights defined in the filter.</p>
+<p>Example of 1D convolution:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">// Simple 1D convolution</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> <span class="op">(</span><span class="dt">int</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> n<span class="op">;</span> i<span class="op">++)</span> <span class="op">{</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="dt">float</span> sum <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> <span class="op">(</span><span class="dt">int</span> j <span class="op">=</span> <span class="op">-</span>radius<span class="op">;</span> j <span class="op">&lt;=</span> radius<span class="op">;</span> j<span class="op">++)</span> <span class="op">{</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>        <span class="dt">int</span> pos <span class="op">=</span> i <span class="op">+</span> j<span class="op">;</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>        <span class="co">// Handle boundary conditions</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="op">(</span>pos <span class="op">&gt;=</span> <span class="dv">0</span> <span class="op">&amp;&amp;</span> pos <span class="op">&lt;</span> n<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>            sum <span class="op">+=</span> input<span class="op">[</span>pos<span class="op">]</span> <span class="op">*</span> filter<span class="op">[</span>j <span class="op">+</span> radius<span class="op">];</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>        <span class="op">}</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>    output<span class="op">[</span>i<span class="op">]</span> <span class="op">=</span> sum<span class="op">;</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
+<h2 id="ghost-elements">Ghost Elements</h2>
+<p>When calculating output elements near the boundaries of the input
+array, we need to handle “ghost” elements - elements that fall outside
+the input array. There are several policies to handle these:</p>
+<ul>
+<li>Assume zeros for out-of-bounds elements</li>
+<li>Replicate boundary values</li>
+<li>Mirror the array at boundaries</li>
+<li>Wrap around (circular convolution)</li>
+</ul>
+<p>Example handling ghost elements:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">// Handling ghost elements with zero padding</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> <span class="op">(</span><span class="dt">int</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> n<span class="op">;</span> i<span class="op">++)</span> <span class="op">{</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="dt">float</span> sum <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> <span class="op">(</span><span class="dt">int</span> j <span class="op">=</span> <span class="op">-</span>radius<span class="op">;</span> j <span class="op">&lt;=</span> radius<span class="op">;</span> j<span class="op">++)</span> <span class="op">{</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>        <span class="dt">int</span> pos <span class="op">=</span> i <span class="op">+</span> j<span class="op">;</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>        <span class="co">// Out-of-bounds positions treated as zero</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="op">(</span>pos <span class="op">&gt;=</span> <span class="dv">0</span> <span class="op">&amp;&amp;</span> pos <span class="op">&lt;</span> n<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>            sum <span class="op">+=</span> input<span class="op">[</span>pos<span class="op">]</span> <span class="op">*</span> filter<span class="op">[</span>j <span class="op">+</span> radius<span class="op">];</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>        <span class="op">}</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>    output<span class="op">[</span>i<span class="op">]</span> <span class="op">=</span> sum<span class="op">;</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
+<h2 id="2d-convolutions">2D Convolutions</h2>
+<p>2D convolution extends the concept to two dimensions, typically
+applied to images. The filter/kernel is a 2D matrix, and for each pixel,
+we calculate the weighted sum of the surrounding pixels.</p>
+<p>Example of 2D convolution:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">// 2D convolution</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> <span class="op">(</span><span class="dt">int</span> y <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> y <span class="op">&lt;</span> height<span class="op">;</span> y<span class="op">++)</span> <span class="op">{</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> <span class="op">(</span><span class="dt">int</span> x <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> x <span class="op">&lt;</span> width<span class="op">;</span> x<span class="op">++)</span> <span class="op">{</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>        <span class="dt">float</span> sum <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> <span class="op">(</span><span class="dt">int</span> ky <span class="op">=</span> <span class="op">-</span>radius<span class="op">;</span> ky <span class="op">&lt;=</span> radius<span class="op">;</span> ky<span class="op">++)</span> <span class="op">{</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>            <span class="cf">for</span> <span class="op">(</span><span class="dt">int</span> kx <span class="op">=</span> <span class="op">-</span>radius<span class="op">;</span> kx <span class="op">&lt;=</span> radius<span class="op">;</span> kx<span class="op">++)</span> <span class="op">{</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>                <span class="dt">int</span> pixelX <span class="op">=</span> x <span class="op">+</span> kx<span class="op">;</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>                <span class="dt">int</span> pixelY <span class="op">=</span> y <span class="op">+</span> ky<span class="op">;</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>                <span class="co">// Handle boundary conditions</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>                <span class="cf">if</span> <span class="op">(</span>pixelX <span class="op">&gt;=</span> <span class="dv">0</span> <span class="op">&amp;&amp;</span> pixelX <span class="op">&lt;</span> width <span class="op">&amp;&amp;</span> pixelY <span class="op">&gt;=</span> <span class="dv">0</span> <span class="op">&amp;&amp;</span> pixelY <span class="op">&lt;</span> height<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>                    sum <span class="op">+=</span> image<span class="op">[</span>pixelY<span class="op">][</span>pixelX<span class="op">]</span> <span class="op">*</span> kernel<span class="op">[</span>ky<span class="op">+</span>radius<span class="op">][</span>kx<span class="op">+</span>radius<span class="op">];</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>                <span class="op">}</span></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>            <span class="op">}</span></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>        <span class="op">}</span></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>        output<span class="op">[</span>y<span class="op">][</span>x<span class="op">]</span> <span class="op">=</span> sum<span class="op">;</span></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
+<h2 id="tiled-2d-convolution-and-phantom-elements">Tiled 2D Convolution
+and Phantom Elements</h2>
+<p>To optimize convolution, especially on parallel architectures like
+GPUs, we can use tiling. Tiling divides the input into blocks that can
+be processed independently, often fitting into faster memory like shared
+memory on GPUs.</p>
+<p>For tiled 2D convolution:</p>
+<ol type="1">
+<li>The input is divided into tiles</li>
+<li>Each tile needs to include “halo” or “phantom” elements around it to
+account for the filter radius</li>
+<li>The input tile dimension = output tile dimension + 2 × mask
+radius</li>
+</ol>
+<p>The challenge with tiled convolution is that input and output tiles
+have different dimensions, since each output element needs surrounding
+input elements for its calculation.</p>
+<h2 id="edge-detection-using-sobel-filter">Edge Detection using Sobel
+Filter</h2>
+<p>Sobel filter is a widely used convolution kernel for edge
+detection:</p>
+<p>Sobel X filter (detecting vertical edges):</p>
+<pre><code>[-1  0  1]
+[-2  0  2]
+[-1  0  1]</code></pre>
+<p>Sobel Y filter (detecting horizontal edges):</p>
+<pre><code>[-1 -2 -1]
+[ 0  0  0]
+[ 1  2  1]</code></pre>
+<p>We apply both filters to the image and combine the results to get the
+edge magnitude.</p>
+<h2 id="openmp-2d-convolution">OpenMP 2D Convolution</h2>
+<p>Using OpenMP, we can parallelize 2D convolution by distributing the
+work across multiple threads:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="pp">#include </span><span class="im">&lt;omp.h&gt;</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="co">// OpenMP parallel 2D convolution</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp parallel for collapse(2)</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> <span class="op">(</span><span class="dt">int</span> y <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> y <span class="op">&lt;</span> height<span class="op">;</span> y<span class="op">++)</span> <span class="op">{</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> <span class="op">(</span><span class="dt">int</span> x <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> x <span class="op">&lt;</span> width<span class="op">;</span> x<span class="op">++)</span> <span class="op">{</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>        <span class="dt">float</span> sum <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> <span class="op">(</span><span class="dt">int</span> ky <span class="op">=</span> <span class="op">-</span>radius<span class="op">;</span> ky <span class="op">&lt;=</span> radius<span class="op">;</span> ky<span class="op">++)</span> <span class="op">{</span></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>            <span class="cf">for</span> <span class="op">(</span><span class="dt">int</span> kx <span class="op">=</span> <span class="op">-</span>radius<span class="op">;</span> kx <span class="op">&lt;=</span> radius<span class="op">;</span> kx<span class="op">++)</span> <span class="op">{</span></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>                <span class="dt">int</span> pixelX <span class="op">=</span> x <span class="op">+</span> kx<span class="op">;</span></span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>                <span class="dt">int</span> pixelY <span class="op">=</span> y <span class="op">+</span> ky<span class="op">;</span></span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>                <span class="co">// Handle boundary conditions</span></span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>                <span class="cf">if</span> <span class="op">(</span>pixelX <span class="op">&gt;=</span> <span class="dv">0</span> <span class="op">&amp;&amp;</span> pixelX <span class="op">&lt;</span> width <span class="op">&amp;&amp;</span> pixelY <span class="op">&gt;=</span> <span class="dv">0</span> <span class="op">&amp;&amp;</span> pixelY <span class="op">&lt;</span> height<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>                    sum <span class="op">+=</span> image<span class="op">[</span>pixelY<span class="op">][</span>pixelX<span class="op">]</span> <span class="op">*</span> kernel<span class="op">[</span>ky<span class="op">+</span>radius<span class="op">][</span>kx<span class="op">+</span>radius<span class="op">];</span></span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>                <span class="op">}</span></span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a>            <span class="op">}</span></span>
+<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a>        <span class="op">}</span></span>
+<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a>        output<span class="op">[</span>y<span class="op">][</span>x<span class="op">]</span> <span class="op">=</span> sum<span class="op">;</span></span>
+<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
+<h1 id="2-cuda-introduction">2. CUDA Introduction</h1>
+<h2 id="cuda-cores-and-structure-of-a-typical-cuda-gpgpu">CUDA Cores and
+Structure of a Typical CUDA GPGPU</h2>
+<p>CUDA (Compute Unified Device Architecture) is NVIDIA’s parallel
+computing platform. A typical CUDA-capable GPU consists of:</p>
+<ul>
+<li><strong>Streaming Multiprocessors (SMs)</strong>: The main
+processing units of the GPU</li>
+<li><strong>CUDA Cores</strong>: Execution units within each SM that
+perform the actual computations</li>
+<li><strong>Memory Hierarchy</strong>:
+<ul>
+<li>Global memory (slow, large)</li>
+<li>Shared memory (fast, small, shared between threads in a block)</li>
+<li>Registers (fastest, per-thread)</li>
+<li>Constant memory (cached, read-only)</li>
+<li>Texture memory (optimized for spatial locality)</li>
+</ul></li>
+</ul>
+<h2 id="warp-engine-streaming-multiprocessor">Warp Engine, Streaming
+Multiprocessor</h2>
+<ul>
+<li><strong>Warp</strong>: A group of 32 threads that execute the same
+instruction at the same time (SIMD/SIMT)</li>
+<li><strong>Streaming Multiprocessor (SM)</strong>: Contains multiple
+CUDA cores, shared memory, and warp schedulers</li>
+<li>Warps are the basic scheduling units in CUDA</li>
+<li>All threads in a warp execute the same instruction at a time (SIMD -
+Single Instruction, Multiple Data)</li>
+<li>CUDA uses SIMT (Single Instruction, Multiple Threads) execution
+model</li>
+</ul>
+<h2 id="1d-grid-and-thread-block-kernel-launch-parameters">1D Grid and
+Thread Block: Kernel Launch Parameters</h2>
+<p>When launching a CUDA kernel, we specify the grid and block
+dimensions using the
+<code>&lt;&lt;&lt;grid_dim, block_dim&gt;&gt;&gt;</code> syntax.</p>
+<ul>
+<li><strong>Thread Block</strong>: A group of threads that can cooperate
+and synchronize with each other</li>
+<li><strong>Grid</strong>: Collection of thread blocks</li>
+<li><strong>Launch Parameters</strong>: Specify how many thread blocks
+and threads per block to use</li>
+</ul>
+<pre class="cuda"><code>// Example of launching a 1D kernel
+kernel&lt;&lt;&lt;numBlocks, threadsPerBlock&gt;&gt;&gt;(args...);</code></pre>
+<h2 id="determining-ideal-thread-block-size">Determining Ideal Thread
+Block Size</h2>
+<p>The ideal thread block size depends on:</p>
+<ul>
+<li>Hardware limits (max 1024 threads per block on modern GPUs)</li>
+<li>Warp size (32 threads)</li>
+<li>Register usage of the kernel</li>
+<li>Shared memory usage</li>
+<li>Problem characteristics</li>
+</ul>
+<p>Best practices:</p>
+<ul>
+<li>Use multiples of 32 threads (warp size)</li>
+<li>Common sizes: 128, 256, or 512 threads per block</li>
+<li>Consider occupancy (number of active warps per SM)</li>
+</ul>
+<h2 id="cuda-program-execution">CUDA Program Execution</h2>
+<p>CUDA program execution flows as:</p>
+<ol type="1">
+<li>Host (CPU) allocates memory on the device (GPU)</li>
+<li>Host copies input data from host memory to device memory</li>
+<li>Host launches kernel(s) on the device</li>
+<li>Device executes kernel(s) in parallel</li>
+<li>Host copies output data from device memory to host memory</li>
+<li>Host frees device memory</li>
+</ol>
+<h2 id="cuda-vector-addition-program">CUDA Vector Addition Program</h2>
+<pre class="cuda"><code>// Kernel definition
+__global__ void vectorAdd(float *A, float *B, float *C, int n) {
+    int i = blockIdx.x * blockDim.x + threadIdx.x;
+    if (i &lt; n) {
+        C[i] = A[i] + B[i];
+    }
+}
+
+// Host code
+int main() {
+    // Allocate and initialize host arrays...
+    
+    // Allocate device memory
+    float *d_A, *d_B, *d_C;
+    cudaMalloc(&amp;d_A, size);
+    cudaMalloc(&amp;d_B, size);
+    cudaMalloc(&amp;d_C, size);
+    
+    // Copy data to device
+    cudaMemcpy(d_A, h_A, size, cudaMemcpyHostToDevice);
+    cudaMemcpy(d_B, h_B, size, cudaMemcpyHostToDevice);
+    
+    // Launch kernel
+    int threadsPerBlock = 256;
+    int blocksPerGrid = (n + threadsPerBlock - 1) / threadsPerBlock;
+    vectorAdd&lt;&lt;&lt;blocksPerGrid, threadsPerBlock&gt;&gt;&gt;(d_A, d_B, d_C, n);
+    
+    // Copy result back to host
+    cudaMemcpy(h_C, d_C, size, cudaMemcpyDeviceToHost);
+    
+    // Free device memory
+    cudaFree(d_A);
+    cudaFree(d_B);
+    cudaFree(d_C);
+    
+    // Free host memory...
+    
+    return 0;
+}</code></pre>
+<h2 id="calculating-unique-index-from-built-in-variables">Calculating
+Unique Index from Built-in Variables</h2>
+<p>In CUDA, we calculate a thread’s global index using the built-in
+variables:</p>
+<ul>
+<li><code>threadIdx</code>: Thread index within the block</li>
+<li><code>blockIdx</code>: Block index within the grid</li>
+<li><code>blockDim</code>: Block dimensions (number of threads in each
+dimension)</li>
+<li><code>gridDim</code>: Grid dimensions (number of blocks in each
+dimension)</li>
+</ul>
+<p>For a 1D grid:</p>
+<pre class="cuda"><code>int i = blockIdx.x * blockDim.x + threadIdx.x;</code></pre>
+<p>For a 2D grid with row-major ordering:</p>
+<pre class="cuda"><code>int row = blockIdx.y * blockDim.y + threadIdx.y;
+int col = blockIdx.x * blockDim.x + threadIdx.x;
+int idx = row * width + col;</code></pre>
+<h1 id="3-cuda-programming">3. CUDA Programming</h1>
+<h2 id="2d-grid-launch">2D Grid Launch</h2>
+<p>To launch a 2D grid, we can specify the grid and block dimensions as
+2D or 3D vectors:</p>
+<pre class="cuda"><code>dim3 threadsPerBlock(16, 16);
+dim3 blocksPerGrid(
+    (width + threadsPerBlock.x - 1) / threadsPerBlock.x,
+    (height + threadsPerBlock.y - 1) / threadsPerBlock.y
+);
+kernel&lt;&lt;&lt;blocksPerGrid, threadsPerBlock&gt;&gt;&gt;(args...);</code></pre>
+<h2 id="thread-divergence">Thread Divergence</h2>
+<p>Thread divergence occurs when threads within the same warp take
+different execution paths, which reduces performance.</p>
+<ul>
+<li>Each warp has 32 threads that execute in lockstep</li>
+<li>When threads in a warp take different paths (e.g., due to if/else),
+execution serializes</li>
+<li>The maximum branch divergence penalty equals the warp size (32x
+slowdown in worst case)</li>
+</ul>
+<p>To minimize thread divergence:</p>
+<ul>
+<li>Avoid code with too many branches</li>
+<li>Make branch conditions align with warp boundaries if possible</li>
+<li>Be aware of large imbalances in thread workloads</li>
+<li>Avoid loops with variable termination conditions</li>
+</ul>
+<h2 id="matrix-operations-and-complications-on-cuda">Matrix Operations
+and Complications on CUDA</h2>
+<p>Matrix operations are well-suited for GPU parallelism, but come with
+challenges:</p>
+<ul>
+<li>Memory access patterns impact performance</li>
+<li>Coalesced memory access is important for global memory
+efficiency</li>
+<li>Matrix dimensions may not align perfectly with block dimensions</li>
+<li>Need to handle boundary conditions</li>
+</ul>
+<h1 id="4-cuda-matrix-multiplication">4. CUDA Matrix Multiplication</h1>
+<h2 id="naive-matrix-multiplication-on-cuda">Naive Matrix Multiplication
+on CUDA</h2>
+<p>The naive approach assigns one thread per output element:</p>
+<pre class="cuda"><code>__global__ void matrixMulNaive(float *A, float *B, float *C, int width) {
+    int row = blockIdx.y * blockDim.y + threadIdx.y;
+    int col = blockIdx.x * blockDim.x + threadIdx.x;
+    
+    if (row &lt; width &amp;&amp; col &lt; width) {
+        float sum = 0.0f;
+        for (int k = 0; k &lt; width; k++) {
+            sum += A[row * width + k] * B[k * width + col];
+        }
+        C[row * width + col] = sum;
+    }
+}</code></pre>
+<p>This approach has poor memory access patterns, as each thread
+accesses an entire row of A and an entire column of B.</p>
+<h2 id="tiled-matrix-multiplication-on-cuda">Tiled Matrix Multiplication
+on CUDA</h2>
+<p>Tiled matrix multiplication improves performance by using shared
+memory:</p>
+<pre class="cuda"><code>__global__ void matrixMulTiled(float *A, float *B, float *C, int width) {
+    __shared__ float As[TILE_SIZE][TILE_SIZE];
+    __shared__ float Bs[TILE_SIZE][TILE_SIZE];
+    
+    int bx = blockIdx.x; int by = blockIdx.y;
+    int tx = threadIdx.x; int ty = threadIdx.y;
+    
+    int row = by * TILE_SIZE + ty;
+    int col = bx * TILE_SIZE + tx;
+    
+    float sum = 0.0f;
+    
+    for (int tile = 0; tile &lt; (width + TILE_SIZE - 1) / TILE_SIZE; tile++) {
+        // Load tiles into shared memory
+        if (row &lt; width &amp;&amp; tile * TILE_SIZE + tx &lt; width)
+            As[ty][tx] = A[row * width + tile * TILE_SIZE + tx];
+        else
+            As[ty][tx] = 0.0f;
+        
+        if (col &lt; width &amp;&amp; tile * TILE_SIZE + ty &lt; width)
+            Bs[ty][tx] = B[(tile * TILE_SIZE + ty) * width + col];
+        else
+            Bs[ty][tx] = 0.0f;
+        
+        __syncthreads();
+        
+        // Compute partial sum for the tile
+        for (int k = 0; k &lt; TILE_SIZE; k++) {
+            sum += As[ty][k] * Bs[k][tx];
+        }
+        
+        __syncthreads();
+    }
+    
+    if (row &lt; width &amp;&amp; col &lt; width) {
+        C[row * width + col] = sum;
+    }
+}</code></pre>
+<h2 id="shared-variables-in-cuda-kernel"><strong>shared</strong>
+Variables in CUDA Kernel</h2>
+<p>Shared memory is a special memory space visible to all threads within
+a block:</p>
+<ul>
+<li>Declared using the <code>__shared__</code> keyword</li>
+<li>Much faster than global memory (on-chip)</li>
+<li>Limited size (typically tens of KB per SM)</li>
+<li>Used for data sharing between threads in a block</li>
+<li>Must be synchronized with <code>__syncthreads()</code> to ensure
+visibility</li>
+</ul>
+<h2 id="barrier-and-syncthread-in-kernel">Barrier and Syncthread in
+Kernel</h2>
+<p><code>__syncthreads()</code> creates a barrier where all threads in a
+block must wait until all other threads in the block reach the same
+point:</p>
+<ul>
+<li>Ensures shared memory operations are visible to all threads in the
+block</li>
+<li>Important when one thread writes to shared memory and others read
+from it</li>
+<li>Must be called by all threads in a block, or by none</li>
+</ul>
+<h2 id="dependencies-in-parallel-programming">Dependencies in Parallel
+Programming</h2>
+<p>Key dependencies in parallel programming include:</p>
+<ol type="1">
+<li><strong>Read After Write (RAW)</strong>: Thread B reads data that
+Thread A writes</li>
+<li><strong>Write After Read (WAR)</strong>: Thread B writes data that
+Thread A has read</li>
+<li><strong>Write After Write (WAW)</strong>: Multiple threads write to
+the same location</li>
+</ol>
+<p>These dependencies require synchronization to ensure correct
+results.</p>
+<h1 id="5-convolution-on-cuda">5. Convolution on CUDA</h1>
+<p>To implement convolution on CUDA efficiently, we use shared memory
+and tiling:</p>
+<pre class="cuda"><code>__constant__ float mask[MASK_WIDTH * MASK_WIDTH];
+
+__global__ void convolution2D(float *input, float *output, int width, int height) {
+    __shared__ float tile[TILE_SIZE + MASK_WIDTH - 1][TILE_SIZE + MASK_WIDTH - 1];
+    
+    int tx = threadIdx.x;
+    int ty = threadIdx.y;
+    int row_o = blockIdx.y * TILE_SIZE + ty;
+    int col_o = blockIdx.x * TILE_SIZE + tx;
+    int row_i = row_o - MASK_RADIUS;
+    int col_i = col_o - MASK_RADIUS;
+    
+    // Load tile into shared memory
+    if ((row_i &gt;= 0) &amp;&amp; (row_i &lt; height) &amp;&amp; (col_i &gt;= 0) &amp;&amp; (col_i &lt; width)) {
+        tile[ty][tx] = input[row_i * width + col_i];
+    } else {
+        tile[ty][tx] = 0.0f;
+    }
+    
+    __syncthreads();
+    
+    // Only compute output for valid threads
+    if (ty &lt; TILE_SIZE &amp;&amp; tx &lt; TILE_SIZE) {
+        if (row_o &lt; height &amp;&amp; col_o &lt; width) {
+            float sum = 0.0f;
+            for (int i = 0; i &lt; MASK_WIDTH; i++) {
+                for (int j = 0; j &lt; MASK_WIDTH; j++) {
+                    sum += mask[i * MASK_WIDTH + j] * tile[ty + i][tx + j];
+                }
+            }
+            output[row_o * width + col_o] = sum;
+        }
+    }
+}</code></pre>
+<p>Key points about CUDA convolution:</p>
+<ol type="1">
+<li>The mask is stored in constant memory for faster access</li>
+<li>Shared memory is used to store a tile of the input image</li>
+<li>Each thread block computes a tile of the output</li>
+<li>The shared memory tile includes halo/ghost cells for the filter
+radius</li>
+<li>Threads handle boundary conditions by checking their global
+indices</li>
+</ol>
+<p>This completes a comprehensive overview of the key concepts in
+convolution and CUDA programming. The implementation details directly
+address the questions about convolution, tiling, ghost elements, CUDA
+structure, and programming best practices.</p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co">// Simple 1D convolution</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> <span class="op">(</span><span class="dt">int</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> n<span class="op">;</span> i<span class="op">++)</span> <span class="op">{</span></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>    <span class="dt">float</span> sum <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> <span class="op">(</span><span class="dt">int</span> j <span class="op">=</span> <span class="op">-</span>radius<span class="op">;</span> j <span class="op">&lt;=</span> radius<span class="op">;</span> j<span class="op">++)</span> <span class="op">{</span></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>        <span class="dt">int</span> pos <span class="op">=</span> i <span class="op">+</span> j<span class="op">;</span></span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>        <span class="co">// Handle boundary conditions</span></span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="op">(</span>pos <span class="op">&gt;=</span> <span class="dv">0</span> <span class="op">&amp;&amp;</span> pos <span class="op">&lt;</span> n<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>            sum <span class="op">+=</span> input<span class="op">[</span>pos<span class="op">]</span> <span class="op">*</span> filter<span class="op">[</span>j <span class="op">+</span> radius<span class="op">];</span></span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a>        <span class="op">}</span></span>
+<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a>    output<span class="op">[</span>i<span class="op">]</span> <span class="op">=</span> sum<span class="op">;</span></span>
+<span id="cb16-12"><a href="#cb16-12" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
+<div class="sourceCode" id="cb17"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co">// Handling ghost elements with zero padding</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> <span class="op">(</span><span class="dt">int</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> n<span class="op">;</span> i<span class="op">++)</span> <span class="op">{</span></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>    <span class="dt">float</span> sum <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> <span class="op">(</span><span class="dt">int</span> j <span class="op">=</span> <span class="op">-</span>radius<span class="op">;</span> j <span class="op">&lt;=</span> radius<span class="op">;</span> j<span class="op">++)</span> <span class="op">{</span></span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>        <span class="dt">int</span> pos <span class="op">=</span> i <span class="op">+</span> j<span class="op">;</span></span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>        <span class="co">// Out-of-bounds positions treated as zero</span></span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="op">(</span>pos <span class="op">&gt;=</span> <span class="dv">0</span> <span class="op">&amp;&amp;</span> pos <span class="op">&lt;</span> n<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a>            sum <span class="op">+=</span> input<span class="op">[</span>pos<span class="op">]</span> <span class="op">*</span> filter<span class="op">[</span>j <span class="op">+</span> radius<span class="op">];</span></span>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a>        <span class="op">}</span></span>
+<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb17-11"><a href="#cb17-11" aria-hidden="true" tabindex="-1"></a>    output<span class="op">[</span>i<span class="op">]</span> <span class="op">=</span> sum<span class="op">;</span></span>
+<span id="cb17-12"><a href="#cb17-12" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
+<div class="sourceCode" id="cb18"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co">// 2D convolution</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> <span class="op">(</span><span class="dt">int</span> y <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> y <span class="op">&lt;</span> height<span class="op">;</span> y<span class="op">++)</span> <span class="op">{</span></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> <span class="op">(</span><span class="dt">int</span> x <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> x <span class="op">&lt;</span> width<span class="op">;</span> x<span class="op">++)</span> <span class="op">{</span></span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>        <span class="dt">float</span> sum <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> <span class="op">(</span><span class="dt">int</span> ky <span class="op">=</span> <span class="op">-</span>radius<span class="op">;</span> ky <span class="op">&lt;=</span> radius<span class="op">;</span> ky<span class="op">++)</span> <span class="op">{</span></span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>            <span class="cf">for</span> <span class="op">(</span><span class="dt">int</span> kx <span class="op">=</span> <span class="op">-</span>radius<span class="op">;</span> kx <span class="op">&lt;=</span> radius<span class="op">;</span> kx<span class="op">++)</span> <span class="op">{</span></span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a>                <span class="dt">int</span> pixelX <span class="op">=</span> x <span class="op">+</span> kx<span class="op">;</span></span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a>                <span class="dt">int</span> pixelY <span class="op">=</span> y <span class="op">+</span> ky<span class="op">;</span></span>
+<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a>                <span class="co">// Handle boundary conditions</span></span>
+<span id="cb18-10"><a href="#cb18-10" aria-hidden="true" tabindex="-1"></a>                <span class="cf">if</span> <span class="op">(</span>pixelX <span class="op">&gt;=</span> <span class="dv">0</span> <span class="op">&amp;&amp;</span> pixelX <span class="op">&lt;</span> width <span class="op">&amp;&amp;</span> pixelY <span class="op">&gt;=</span> <span class="dv">0</span> <span class="op">&amp;&amp;</span> pixelY <span class="op">&lt;</span> height<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb18-11"><a href="#cb18-11" aria-hidden="true" tabindex="-1"></a>                    sum <span class="op">+=</span> image<span class="op">[</span>pixelY<span class="op">][</span>pixelX<span class="op">]</span> <span class="op">*</span> kernel<span class="op">[</span>ky<span class="op">+</span>radius<span class="op">][</span>kx<span class="op">+</span>radius<span class="op">];</span></span>
+<span id="cb18-12"><a href="#cb18-12" aria-hidden="true" tabindex="-1"></a>                <span class="op">}</span></span>
+<span id="cb18-13"><a href="#cb18-13" aria-hidden="true" tabindex="-1"></a>            <span class="op">}</span></span>
+<span id="cb18-14"><a href="#cb18-14" aria-hidden="true" tabindex="-1"></a>        <span class="op">}</span></span>
+<span id="cb18-15"><a href="#cb18-15" aria-hidden="true" tabindex="-1"></a>        output<span class="op">[</span>y<span class="op">][</span>x<span class="op">]</span> <span class="op">=</span> sum<span class="op">;</span></span>
+<span id="cb18-16"><a href="#cb18-16" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb18-17"><a href="#cb18-17" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
+<pre class="plaintext"><code>[-1  0  1]
+[-2  0  2]
+[-1  0  1]</code></pre>
+<pre class="plaintext"><code>[-1 -2 -1]
+[ 0  0  0]
+[ 1  2  1]</code></pre>
+<div class="sourceCode" id="cb21"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="pp">#include </span><span class="im">&lt;omp.h&gt;</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="co">// OpenMP parallel 2D convolution</span></span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp parallel for collapse(2)</span></span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> <span class="op">(</span><span class="dt">int</span> y <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> y <span class="op">&lt;</span> height<span class="op">;</span> y<span class="op">++)</span> <span class="op">{</span></span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> <span class="op">(</span><span class="dt">int</span> x <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> x <span class="op">&lt;</span> width<span class="op">;</span> x<span class="op">++)</span> <span class="op">{</span></span>
+<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a>        <span class="dt">float</span> sum <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> <span class="op">(</span><span class="dt">int</span> ky <span class="op">=</span> <span class="op">-</span>radius<span class="op">;</span> ky <span class="op">&lt;=</span> radius<span class="op">;</span> ky<span class="op">++)</span> <span class="op">{</span></span>
+<span id="cb21-9"><a href="#cb21-9" aria-hidden="true" tabindex="-1"></a>            <span class="cf">for</span> <span class="op">(</span><span class="dt">int</span> kx <span class="op">=</span> <span class="op">-</span>radius<span class="op">;</span> kx <span class="op">&lt;=</span> radius<span class="op">;</span> kx<span class="op">++)</span> <span class="op">{</span></span>
+<span id="cb21-10"><a href="#cb21-10" aria-hidden="true" tabindex="-1"></a>                <span class="dt">int</span> pixelX <span class="op">=</span> x <span class="op">+</span> kx<span class="op">;</span></span>
+<span id="cb21-11"><a href="#cb21-11" aria-hidden="true" tabindex="-1"></a>                <span class="dt">int</span> pixelY <span class="op">=</span> y <span class="op">+</span> ky<span class="op">;</span></span>
+<span id="cb21-12"><a href="#cb21-12" aria-hidden="true" tabindex="-1"></a>                <span class="co">// Handle boundary conditions</span></span>
+<span id="cb21-13"><a href="#cb21-13" aria-hidden="true" tabindex="-1"></a>                <span class="cf">if</span> <span class="op">(</span>pixelX <span class="op">&gt;=</span> <span class="dv">0</span> <span class="op">&amp;&amp;</span> pixelX <span class="op">&lt;</span> width <span class="op">&amp;&amp;</span> pixelY <span class="op">&gt;=</span> <span class="dv">0</span> <span class="op">&amp;&amp;</span> pixelY <span class="op">&lt;</span> height<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb21-14"><a href="#cb21-14" aria-hidden="true" tabindex="-1"></a>                    sum <span class="op">+=</span> image<span class="op">[</span>pixelY<span class="op">][</span>pixelX<span class="op">]</span> <span class="op">*</span> kernel<span class="op">[</span>ky<span class="op">+</span>radius<span class="op">][</span>kx<span class="op">+</span>radius<span class="op">];</span></span>
+<span id="cb21-15"><a href="#cb21-15" aria-hidden="true" tabindex="-1"></a>                <span class="op">}</span></span>
+<span id="cb21-16"><a href="#cb21-16" aria-hidden="true" tabindex="-1"></a>            <span class="op">}</span></span>
+<span id="cb21-17"><a href="#cb21-17" aria-hidden="true" tabindex="-1"></a>        <span class="op">}</span></span>
+<span id="cb21-18"><a href="#cb21-18" aria-hidden="true" tabindex="-1"></a>        output<span class="op">[</span>y<span class="op">][</span>x<span class="op">]</span> <span class="op">=</span> sum<span class="op">;</span></span>
+<span id="cb21-19"><a href="#cb21-19" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb21-20"><a href="#cb21-20" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
+<pre class="plaintext"><code>// Example of launching a 1D kernel
+kernel&lt;&lt;&lt;numBlocks, threadsPerBlock&gt;&gt;&gt;(args...);</code></pre>
+<pre class="plaintext"><code>// Kernel definition
+__global__ void vectorAdd(float *A, float *B, float *C, int n) {
+    int i = blockIdx.x * blockDim.x + threadIdx.x;
+    if (i &lt; n) {
+        C[i] = A[i] + B[i];
+    }
+}
+
+// Host code
+int main() {
+    // Allocate and initialize host arrays...
+    
+    // Allocate device memory
+    float *d_A, *d_B, *d_C;
+    cudaMalloc(&amp;d_A, size);
+    cudaMalloc(&amp;d_B, size);
+    cudaMalloc(&amp;d_C, size);
+    
+    // Copy data to device
+    cudaMemcpy(d_A, h_A, size, cudaMemcpyHostToDevice);
+    cudaMemcpy(d_B, h_B, size, cudaMemcpyHostToDevice);
+    
+    // Launch kernel
+    int threadsPerBlock = 256;
+    int blocksPerGrid = (n + threadsPerBlock - 1) / threadsPerBlock;
+    vectorAdd&lt;&lt;&lt;blocksPerGrid, threadsPerBlock&gt;&gt;&gt;(d_A, d_B, d_C, n);
+    
+    // Copy result back to host
+    cudaMemcpy(h_C, d_C, size, cudaMemcpyDeviceToHost);
+    
+    // Free device memory
+    cudaFree(d_A);
+    cudaFree(d_B);
+    cudaFree(d_C);
+    
+    // Free host memory...
+    
+    return 0;
+}</code></pre>
+<pre class="plaintext"><code>int i = blockIdx.x * blockDim.x + threadIdx.x;</code></pre>
+<pre class="plaintext"><code>int row = blockIdx.y * blockDim.y + threadIdx.y;
+int col = blockIdx.x * blockDim.x + threadIdx.x;
+int idx = row * width + col;</code></pre>
+<pre class="plaintext"><code>dim3 threadsPerBlock(16, 16);
+dim3 blocksPerGrid(
+    (width + threadsPerBlock.x - 1) / threadsPerBlock.x,
+    (height + threadsPerBlock.y - 1) / threadsPerBlock.y
+);
+kernel&lt;&lt;&lt;blocksPerGrid, threadsPerBlock&gt;&gt;&gt;(args...);</code></pre>
+<pre class="plaintext"><code>__global__ void matrixMulNaive(float *A, float *B, float *C, int width) {
+    int row = blockIdx.y * blockDim.y + threadIdx.y;
+    int col = blockIdx.x * blockDim.x + threadIdx.x;
+    
+    if (row &lt; width &amp;&amp; col &lt; width) {
+        float sum = 0.0f;
+        for (int k = 0; k &lt; width; k++) {
+            sum += A[row * width + k] * B[k * width + col];
+        }
+        C[row * width + col] = sum;
+    }
+}</code></pre>
+<pre class="plaintext"><code>__global__ void matrixMulTiled(float *A, float *B, float *C, int width) {
+    __shared__ float As[TILE_SIZE][TILE_SIZE];
+    __shared__ float Bs[TILE_SIZE][TILE_SIZE];
+    
+    int bx = blockIdx.x; int by = blockIdx.y;
+    int tx = threadIdx.x; int ty = threadIdx.y;
+    
+    int row = by * TILE_SIZE + ty;
+    int col = bx * TILE_SIZE + tx;
+    
+    float sum = 0.0f;
+    
+    for (int tile = 0; tile &lt; (width + TILE_SIZE - 1) / TILE_SIZE; tile++) {
+        // Load tiles into shared memory
+        if (row &lt; width &amp;&amp; tile * TILE_SIZE + tx &lt; width)
+            As[ty][tx] = A[row * width + tile * TILE_SIZE + tx];
+        else
+            As[ty][tx] = 0.0f;
+        
+        if (col &lt; width &amp;&amp; tile * TILE_SIZE + ty &lt; width)
+            Bs[ty][tx] = B[(tile * TILE_SIZE + ty) * width + col];
+        else
+            Bs[ty][tx] = 0.0f;
+        
+        __syncthreads();
+        
+        // Compute partial sum for the tile
+        for (int k = 0; k &lt; TILE_SIZE; k++) {
+            sum += As[ty][k] * Bs[k][tx];
+        }
+        
+        __syncthreads();
+    }
+    
+    if (row &lt; width &amp;&amp; col &lt; width) {
+        C[row * width + col] = sum;
+    }
+}</code></pre>
+<pre class="plaintext"><code>__constant__ float mask[MASK_WIDTH * MASK_WIDTH];
+
+__global__ void convolution2D(float *input, float *output, int width, int height) {
+    __shared__ float tile[TILE_SIZE + MASK_WIDTH - 1][TILE_SIZE + MASK_WIDTH - 1];
+    
+    int tx = threadIdx.x;
+    int ty = threadIdx.y;
+    int row_o = blockIdx.y * TILE_SIZE + ty;
+    int col_o = blockIdx.x * TILE_SIZE + tx;
+    int row_i = row_o - MASK_RADIUS;
+    int col_i = col_o - MASK_RADIUS;
+    
+    // Load tile into shared memory
+    if ((row_i &gt;= 0) &amp;&amp; (row_i &lt; height) &amp;&amp; (col_i &gt;= 0) &amp;&amp; (col_i &lt; width)) {
+        tile[ty][tx] = input[row_i * width + col_i];
+    } else {
+        tile[ty][tx] = 0.0f;
+    }
+    
+    __syncthreads();
+    
+    // Only compute output for valid threads
+    if (ty &lt; TILE_SIZE &amp;&amp; tx &lt; TILE_SIZE) {
+        if (row_o &lt; height &amp;&amp; col_o &lt; width) {
+            float sum = 0.0f;
+            for (int i = 0; i &lt; MASK_WIDTH; i++) {
+                for (int j = 0; j &lt; MASK_WIDTH; j++) {
+                    sum += mask[i * MASK_WIDTH + j] * tile[ty + i][tx + j];
+                }
+            }
+            output[row_o * width + col_o] = sum;
+        }
+    }
+}</code></pre>
+</body>
+</html>

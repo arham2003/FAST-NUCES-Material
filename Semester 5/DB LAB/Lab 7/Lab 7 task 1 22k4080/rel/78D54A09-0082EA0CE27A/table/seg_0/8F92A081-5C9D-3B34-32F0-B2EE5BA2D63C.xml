@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8F92A081-5C9D-3B34-32F0-B2EE5BA2D63C" name="instructor">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:30:02 UTC</createdTime>
+<generatorID>1FF1835E-10C6-329A-CFCC-2BDBADABBE42</generatorID>
+<ownerDesignName>Lab 7 task 1 22k4080</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="name" id="2F0534EC-F8AF-277E-DF3B-037A22D11145">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:30:02 UTC</createdTime>
+<generatorID>EC8F0269-9F66-0DC8-E53C-34662DB47EB3</generatorID>
+<ownerDesignName>Lab 7 task 1 22k4080</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DBCF3673-7147-644F-4C9B-92496AAB5285</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="instructor_id" id="C005565F-FE91-F587-ABC9-F7466258C9D3">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:30:02 UTC</createdTime>
+<generatorID>9ADA694C-EF71-A51B-D909-1AB1DA2C390B</generatorID>
+<ownerDesignName>Lab 7 task 1 22k4080</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>1E69ABFC-D5CD-3EA7-1F72-FC32DFD1B1AA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="B0B7EDC7-CD00-250B-2636-29B1A60ED2A2">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:30:02 UTC</createdTime>
+<generatorID>A1E9BC5D-27AF-874A-8AA6-D301863ED4AE</generatorID>
+<ownerDesignName>Lab 7 task 1 22k4080</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DBCF3673-7147-644F-4C9B-92496AAB5285</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1F2A5F33-55C5-7B61-C8B6-97048BECE7F7" name="instructor_PK">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:30:02 UTC</createdTime>
+<generatorID>AB54ABCE-1BF7-02DF-EF3D-1EC9A2C015A5</generatorID>
+<ownerDesignName>Lab 7 task 1 22k4080</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C005565F-FE91-F587-ABC9-F7466258C9D3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

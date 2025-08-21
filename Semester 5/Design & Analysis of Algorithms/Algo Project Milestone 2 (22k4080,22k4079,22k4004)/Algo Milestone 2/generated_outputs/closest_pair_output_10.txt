@@ -1,0 +1,2 @@
+Closest Points: ((-107, 95), (-106, 98))
+Minimum Distance: 3.162278

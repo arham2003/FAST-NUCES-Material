@@ -1,0 +1,69 @@
+;TITLE My First Program (Text.asm)
+INCLUDE Irvine32.inc
+.data
+msg1 db "green lights on",0
+msg2 db "red lights on",0
+.code
+main PROC
+
+;Task 1 lab 1
+COMMENT @
+mov eax, 10h
+mov ebx, 20h
+mov ecx, eax
+mov eax, ebx
+mov ebx, ecx
+@
+
+;Task 2 lab 1
+COMMENT @
+mov eax, 0
+mov ebx, 0
+mov eax, 15d
+mov ebx, 25d
+add ax, bx
+call writeint
+@
+
+;Task 3 lab 1
+;mul multiply the register with the value written in eax
+COMMENT @
+mov eax, 5
+mov ebx, 8
+mul ebx
+call writeint
+@
+
+;Task 4 lab 1
+COMMENT @
+mov eax, 30
+mov ebx, 15
+sub eax,ebx
+call writeint
+@
+
+;Task 5 lab 1
+
+mov eax,12d
+mov ebx,12d
+mov edx, 0
+
+cmp eax,ebx 
+je L1
+jne L2
+
+L1:
+mov edx, offset msg1
+call writestring
+call crlf
+call exitprocess
+
+L2:
+mov edx, offset msg2
+call writestring
+call crlf
+call exitprocess
+
+exit
+main ENDP
+END main

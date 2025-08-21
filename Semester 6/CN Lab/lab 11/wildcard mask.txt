@@ -1,0 +1,6 @@
+wildcard mask: 
+if no subnetting, means default subnet
+255.255.255.0 -> 0.0.0.255
+
+if subnetting applied:
+e.g. 255.255.255.192 -> 0.0.0.63

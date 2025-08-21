@@ -1,0 +1,6 @@
+loc per person month: $50*160hours(in month)
+			8000 loc / person month
+total effort required:
+total loc / loc per pm
+50,000/8000 = $6.25/pm (answer 1) 
+			

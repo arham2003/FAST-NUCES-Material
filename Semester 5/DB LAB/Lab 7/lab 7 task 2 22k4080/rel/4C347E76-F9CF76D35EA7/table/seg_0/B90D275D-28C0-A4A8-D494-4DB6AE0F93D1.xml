@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B90D275D-28C0-A4A8-D494-4DB6AE0F93D1" name="meal_plan">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:24:34 UTC</createdTime>
+<generatorID>5C1EF822-E524-4CF5-3A34-0861E22764D4</generatorID>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="meal_id" id="566EF04F-F9D9-3136-B21B-BF412280E263">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:24:34 UTC</createdTime>
+<generatorID>C645E4F0-3486-8D7B-D2B4-005F4FB03184</generatorID>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>34028724-FEF8-B7C0-3C41-DE3CCB1FF039</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="type" id="92D59F54-1047-2615-F233-9AC97A2E4DF5">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:24:34 UTC</createdTime>
+<generatorID>19226B31-8851-5C65-7227-17F9A8E9D445</generatorID>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>80E4478C-7819-D1A8-084B-14644382EA8E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="restrictions" id="1EBA97C0-3E17-17B9-6534-272C51882AD5">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:24:34 UTC</createdTime>
+<generatorID>42B090AC-1B52-D6A2-E7CF-61777DEB72BF</generatorID>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>80E4478C-7819-D1A8-084B-14644382EA8E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9C8B7DF0-9A3B-A91F-263D-89DA1CE0AFE4" name="meal_plan_PK">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:24:34 UTC</createdTime>
+<generatorID>7CE699AB-074A-8AE1-E51F-87507B291E62</generatorID>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="566EF04F-F9D9-3136-B21B-BF412280E263"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

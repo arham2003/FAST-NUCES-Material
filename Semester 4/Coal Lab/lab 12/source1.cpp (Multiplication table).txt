@@ -1,0 +1,26 @@
+source1.cpp: (Multiplication table)
+#include <iostream>
+using namespace std;
+
+extern "C" {
+	void logicForTable();
+
+	int askForInteger();
+	void display(int value, int number, int counter);
+}
+
+int main() {
+	logicForTable();
+	return 0;
+}
+
+int askForInteger() {
+	int n;
+	cout << "Enter a positive integer: ";
+	cin >> n;
+	return n;
+}
+
+void display(int value, int number, int counter) {
+	cout << number << "x" << counter << "=" << value << endl;
+}

@@ -1,0 +1,31 @@
+Q2:
+
+
+import java.util.Scanner;
+
+public class DataScientist {
+    private int noOfAnsgiven, noOfQsasked;
+    public String fname,lname,country;
+    public  int age;
+    private String highestEd;
+
+    DataScientist(String fn, String ln, int age,String ctry,String highed){
+        this.fname = fn;
+        this.lname = ln;
+        this.age = age;
+        this.country = ctry;
+        highestEd = highed;
+
+    }
+
+
+
+    public static void main(String[] args) {
+        System.out.println("NAME: M. Arham Hussain Khan\t\t" + "ID: 22k-4080");
+        Scanner m = new Scanner(System.in);
+        System.out.println("Enter the Highest Education");
+        String education = m.nextLine();
+        DataScientist ds1 = new DataScientist("Arham","Khan",16,"Pakistan","MSc.");
+
+    }
+}

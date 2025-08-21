@@ -1,0 +1,3 @@
+lsblk
+sudo mkdir /mnt/usb-backup
+sudo mount /dev/sda1 /mnt/usb-backup

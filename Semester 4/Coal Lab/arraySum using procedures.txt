@@ -1,0 +1,33 @@
+INCLUDE Irvine32.inc
+
+.data
+arr1 dword 10,20,30
+arr2 dword 50,50
+.code
+main PROC
+mov eax ,0
+
+mov ecx, lengthof arr1
+mov esi, offset arr1
+call arraySum
+
+mov ecx, lengthof arr2
+mov esi, offset arr2
+call arraySum
+
+call writedec
+call crlf
+
+exit
+main ENDP
+
+arraySum PROC
+l1:
+add eax,[esi]
+add esi, 4
+loop l1
+ret
+
+arraySum ENDP
+
+END main

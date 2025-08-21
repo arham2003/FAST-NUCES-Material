@@ -1,0 +1,58 @@
+NLP 
+
+Introduction
+Chapter 1. NLP tasks in syntax, semantics, and pragmatics. Applications such as information extraction, question answering, and machine translation. 
+The problem of ambiguity. The role of machine learning. Brief history of the field.
+
+N-gram Language Models
+Chapter 4. The role of language models. Simple N-gram models. Estimating parameters and smoothing. Evaluating language models.
+
+Part Of Speech Tagging and Sequence Labeling
+Chapters 5-6. Lexical syntax. Hidden Markov Models (Forward and Viterbi algorithms and EM training).
+
+Basic Neural Networks
+Any basic introduction to perceptron and backpropagation such as section 18.7 in Artificial Intelligence: A Modern Approach (3rd ed), Chapter 4 of Machine Learning, or sections 5.0 - 5.3.3 of Pattern Recognition and Machine Learning.
+LSTM Recurrent Neural Networks
+"Understanding LSTM Networks" blog post, optionally the original paper Long Short Term Memory.
+
+Syntactic parsing
+Chapters 12-14. Grammar formalisms and treebanks. Efficient parsing for context-free grammars (CFGs). Statistical parsing and probabilistic CFGs (PCFGs). Lexicalized PCFGs. Neural shift-reduce dependency parsing (see this paper).
+
+Semantic Analysis
+Chapters 18-20. Lexical semantics and word-sense disambiguation. Compositional semantics. Semantic Role Labeling and Semantic Parsing.
+
+Information Extraction (IE)
+Chapter 22. Named entity recognition and relation extraction. IE using sequence labeling.
+
+Machine Translation (MT)
+Chapter 25. Basic issues in MT. Statistical translation, word alignment, phrase-based translation, and synchronous grammars.
+
+
+IS Audit and Control 
+
+IS Audit & Control (CS494)
+Credit Hours: 3
+Course Level: Senior
+
+Course Outline: 
+Overview of Information System Auditing. Information System Audit Process. 
+
+Management Planning and Organizing IS Strategy .Security of Information Assets. 
+
+System Development Management Controls. Programming Management Controls. 
+
+Data Resource Management Controls. Security Management Controls. 
+
+Operations Management Controls. Quality Assurance Management Controls. 
+
+Input, Process and Output Controls.Database and Communication Controls.
+
+Computerized Audit Software.Performance Measurement Tools.
+
+Disaster Recovery and Business Continuity.
+
+
+Design Defect 
+
+Course Outline: Introduction to software architecture, the architecture business cycle, architectural styles of software systems, software qualities through architectural style, 
+software architecture description methods, the software architecture analysis method, software patterns, software architectural frameworks, pattern language, antipatterns.

@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="92DB9D36-F32D-C31C-DFFD-26E193820D29" name="meal operation">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:21:40 UTC</createdTime>
+<generatorID>568E4ADA-9FB0-FF8A-9748-5EC96599EA8F</generatorID>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<engineerTo>
+<item key="D5CD0DFE-326C-7965-2969-190CA6D77B91" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="operation id" id="92E0AA77-AAE2-8DAD-CF94-49111478A9D8">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:21:40 UTC</createdTime>
+<generatorID>5A592D77-8B50-0361-1D50-11B225E0D04C</generatorID>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<engineerTo>
+<item key="D5CD0DFE-326C-7965-2969-190CA6D77B91" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>34028724-FEF8-B7C0-3C41-DE3CCB1FF039</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="timing" id="DF5321E9-D2F4-C660-CF9A-1FCA85D73461">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:21:40 UTC</createdTime>
+<generatorID>8855DC7F-DFED-6404-7364-FCAE08F5A829</generatorID>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<engineerTo>
+<item key="D5CD0DFE-326C-7965-2969-190CA6D77B91" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>DF668A09-B4EE-FF4F-B323-BD49143C69E4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="meal id" id="3CA122BE-3F65-4960-96F9-CA8E5F7F2CF7">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:21:40 UTC</createdTime>
+<generatorID>EBD1B36E-482C-CEF0-DFAE-4CE8437E6971</generatorID>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<engineerTo>
+<item key="D5CD0DFE-326C-7965-2969-190CA6D77B91" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>34028724-FEF8-B7C0-3C41-DE3CCB1FF039</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="meal plan meal id" id="D2AA3240-E0CE-C20B-CD55-78132E70CD1D">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:21:40 UTC</createdTime>
+<generatorID>5546D7B1-8B56-B50C-6D9A-3B150648B409</generatorID>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<engineerTo>
+<item key="D5CD0DFE-326C-7965-2969-190CA6D77B91" value="true"/>
+</engineerTo>
+<referedAttribute>C645E4F0-3486-8D7B-D2B4-005F4FB03184</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>34028724-FEF8-B7C0-3C41-DE3CCB1FF039</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3975A48A-36C4-B011-8969-32D61352D3BD" name="meal operation pk">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:21:40 UTC</createdTime>
+<generatorID>61534B53-BF5E-2D79-21A1-6F4F5703E4F7</generatorID>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<engineerTo>
+<item key="D5CD0DFE-326C-7965-2969-190CA6D77B91" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>92E0AA77-AAE2-8DAD-CF94-49111478A9D8</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

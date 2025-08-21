@@ -1,0 +1,128 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D740184A-1BDA-79F0-CC74-E89E9D16FB78" name="booking">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:21:40 UTC</createdTime>
+<generatorID>1452C35B-79F8-5FB9-67CC-7822F17FE63B</generatorID>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<engineerTo>
+<item key="D5CD0DFE-326C-7965-2969-190CA6D77B91" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="booking id" id="8317D7B8-C1E8-DF4B-7461-E81D9097562C">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:21:40 UTC</createdTime>
+<generatorID>A34DD67B-F5B7-59F0-C9C1-791313E93E2C</generatorID>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<engineerTo>
+<item key="D5CD0DFE-326C-7965-2969-190CA6D77B91" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>34028724-FEF8-B7C0-3C41-DE3CCB1FF039</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="meal id" id="81CBC2C2-3384-C817-8ADF-0AA7E16939E9">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:21:40 UTC</createdTime>
+<generatorID>FF0011B0-5AF6-2B0C-F46E-CB3577572E10</generatorID>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<engineerTo>
+<item key="D5CD0DFE-326C-7965-2969-190CA6D77B91" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>34028724-FEF8-B7C0-3C41-DE3CCB1FF039</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="resident id" id="6F8ACCEA-0128-28BD-B798-29D0AB3EBE10">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:21:40 UTC</createdTime>
+<generatorID>DD3BBC40-7A11-1C24-B44A-BE239CB1CD95</generatorID>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<engineerTo>
+<item key="D5CD0DFE-326C-7965-2969-190CA6D77B91" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>34028724-FEF8-B7C0-3C41-DE3CCB1FF039</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="booking date" id="8037C7E5-5D30-33A8-8D3A-FF619E20F48C">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:21:40 UTC</createdTime>
+<generatorID>E8F54201-F519-B694-90CF-097297C88F2F</generatorID>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<engineerTo>
+<item key="D5CD0DFE-326C-7965-2969-190CA6D77B91" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>DF668A09-B4EE-FF4F-B323-BD49143C69E4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="booking time" id="3BE115EE-E6A6-ED2B-ACA7-F176DBB8B1D9">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:21:40 UTC</createdTime>
+<generatorID>FC3F04B1-E553-CCA7-721E-C441C787896A</generatorID>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<engineerTo>
+<item key="D5CD0DFE-326C-7965-2969-190CA6D77B91" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>DF668A09-B4EE-FF4F-B323-BD49143C69E4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="hostel residents id" id="1B5B8323-6406-C371-17CE-CD439D1C5F1F">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:21:40 UTC</createdTime>
+<generatorID>9F31E60C-1AFB-28C2-8F1F-F3FA9CE108EF</generatorID>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<engineerTo>
+<item key="D5CD0DFE-326C-7965-2969-190CA6D77B91" value="true"/>
+</engineerTo>
+<referedAttribute>F1347160-86BF-3C3D-4AA1-E44D4104F69F</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>34028724-FEF8-B7C0-3C41-DE3CCB1FF039</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="meal operation operation id" id="827D934A-D1CA-0CBD-D950-0973761B67F6">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:21:40 UTC</createdTime>
+<generatorID>E8D1CD48-1670-2C6A-2E0F-BDF5A22D1564</generatorID>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<engineerTo>
+<item key="D5CD0DFE-326C-7965-2969-190CA6D77B91" value="true"/>
+</engineerTo>
+<referedAttribute>92E0AA77-AAE2-8DAD-CF94-49111478A9D8</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>34028724-FEF8-B7C0-3C41-DE3CCB1FF039</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="19CFC3C7-B1D5-7A82-7E83-E9B6E12260AA" name="booking pk">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:21:40 UTC</createdTime>
+<generatorID>B7BCAD79-856A-F62F-054F-26AEF1C5EAE3</generatorID>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<engineerTo>
+<item key="D5CD0DFE-326C-7965-2969-190CA6D77B91" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8317D7B8-C1E8-DF4B-7461-E81D9097562C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

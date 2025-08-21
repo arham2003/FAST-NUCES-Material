@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="booking_meal_operation_fk" directorySegmentName="seg_0" id="E8D1CD48-1670-2C6A-2E0F-BDF5A22D1564">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:21:40 UTC</createdTime>
+<generatorID>B752F501-733D-006A-E1DE-CEB215D9F3A7</generatorID>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<engineerTo>
+<item key="D5CD0DFE-326C-7965-2969-190CA6D77B91" value="true"/>
+</engineerTo>
+<sourcePk>3975A48A-36C4-B011-8969-32D61352D3BD</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>92DB9D36-F32D-C31C-DFFD-26E193820D29</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>D740184A-1BDA-79F0-CC74-E89E9D16FB78</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

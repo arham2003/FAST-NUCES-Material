@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Relational_1" id="D5CD0DFE-326C-7965-2969-190CA6D77B91" mainViewID="CDD6E3A3-DD17-65AB-1004-4AB584DFCD75">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:21:01 UTC</createdTime>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>01F6E6D1-21D0-CFBD-ABDD-3988D1813575</selectedRDBMSSite>
+<importDDLFileStamps>
+<importDDLFileStamp class="oracle.dbtools.crest.imports.DDLFileStamp">
+<fileName>task2.ddl</fileName>
+<pathName>C:\Users\ArhamKhan\Downloads</pathName>
+<dbType>17</dbType>
+</importDDLFileStamp>
+</importDDLFileStamps>
+</relationalModel>

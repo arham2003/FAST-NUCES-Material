@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="89B8108E-4BE1-C89D-A088-80AA95EF42DA" containerWithKeyObject="172DEF67-2A52-A322-E57C-7015B367F539" localFKIndex="303706F1-187E-0986-056F-E99B975F1639" name="attendance_students_fk">
+<sourceDDLFile>task 1.ddl</sourceDDLFile>
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:26:11 UTC</createdTime>
+<ownerDesignName>Lab 7 task 1 22k4080</ownerDesignName>
+<importedID>A053C6D4-698C-0C7F-44FA-40658B6C63E6</importedID>
+<referredTableLongName>students</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C214164A-CE7D-497E-3D92-56FC6616FE4B</referredTableID>
+<keyObject>3C8FA896-E52B-9420-CA22-BEF0C3C33671</keyObject>
+<referredKeyID>3C8FA896-E52B-9420-CA22-BEF0C3C33671</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>student_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

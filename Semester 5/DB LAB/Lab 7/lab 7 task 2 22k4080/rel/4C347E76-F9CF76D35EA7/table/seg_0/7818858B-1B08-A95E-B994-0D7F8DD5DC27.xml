@@ -1,0 +1,133 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7818858B-1B08-A95E-B994-0D7F8DD5DC27" name="booking">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:24:34 UTC</createdTime>
+<generatorID>D740184A-1BDA-79F0-CC74-E89E9D16FB78</generatorID>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="booking_id" id="4B6277DD-F3BA-70AF-E592-543173A73A8F">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:24:34 UTC</createdTime>
+<generatorID>8317D7B8-C1E8-DF4B-7461-E81D9097562C</generatorID>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>34028724-FEF8-B7C0-3C41-DE3CCB1FF039</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="meal_id" id="CE5990BB-F418-13D6-1DE2-967CC2252C46">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:24:34 UTC</createdTime>
+<generatorID>81CBC2C2-3384-C817-8ADF-0AA7E16939E9</generatorID>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>34028724-FEF8-B7C0-3C41-DE3CCB1FF039</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="resident_id" id="05C1A9E9-C6DF-755B-BA73-D8ABADA1D109">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:24:34 UTC</createdTime>
+<generatorID>6F8ACCEA-0128-28BD-B798-29D0AB3EBE10</generatorID>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>34028724-FEF8-B7C0-3C41-DE3CCB1FF039</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="booking_date" id="20E22E17-18BB-640D-ACA4-B585F1C6D1E5">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:24:34 UTC</createdTime>
+<generatorID>8037C7E5-5D30-33A8-8D3A-FF619E20F48C</generatorID>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>DF668A09-B4EE-FF4F-B323-BD49143C69E4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="booking_time" id="0532B0A7-724B-B167-3C2C-CEB2AF51E5B0">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:24:34 UTC</createdTime>
+<generatorID>3BE115EE-E6A6-ED2B-ACA7-F176DBB8B1D9</generatorID>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>DF668A09-B4EE-FF4F-B323-BD49143C69E4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hostel_residents_id" id="7375F178-B1AF-5693-9C23-F00AC49D770F">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:24:34 UTC</createdTime>
+<generatorID>1B5B8323-6406-C371-17CE-CD439D1C5F1F</generatorID>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>34028724-FEF8-B7C0-3C41-DE3CCB1FF039</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8756B627-1C33-3755-C7F3-A5CE65A33304" referredColumn="59C0E82C-85BC-1E30-A393-9269A4912848"/>
+</associations>
+</Column>
+<Column name="meal_operation_operation_id" id="846AB6F3-4EA5-E0D3-4B48-CA04C5977967">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:24:34 UTC</createdTime>
+<generatorID>827D934A-D1CA-0CBD-D950-0973761B67F6</generatorID>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>34028724-FEF8-B7C0-3C41-DE3CCB1FF039</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="99E33B08-A6D4-61AA-92D1-197E8FEE4786" referredColumn="D1C02F76-F3F5-6C74-4616-D8F555D109A4"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="73713F30-F4C7-8E61-3274-F8F1B4D36E8D" name="booking_PK">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:24:34 UTC</createdTime>
+<generatorID>19CFC3C7-B1D5-7A82-7E83-E9B6E12260AA</generatorID>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4B6277DD-F3BA-70AF-E592-543173A73A8F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C6271E7F-EF6A-E2A6-53CF-637889EC854D" name="booking_hostel_residents_FK">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:24:34 UTC</createdTime>
+<generatorID>9F31E60C-1AFB-28C2-8F1F-F3FA9CE108EF</generatorID>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7375F178-B1AF-5693-9C23-F00AC49D770F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BF2E1C20-2EA3-6FAF-C385-AE642325B6FD" name="booking_meal_operation_FK">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:24:34 UTC</createdTime>
+<generatorID>E8D1CD48-1670-2C6A-2E0F-BDF5A22D1564</generatorID>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="846AB6F3-4EA5-E0D3-4B48-CA04C5977967"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

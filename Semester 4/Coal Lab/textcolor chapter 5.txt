@@ -1,0 +1,17 @@
+INCLUDE Irvine32.inc
+
+.data
+str1 BYTE "Color output is easy!", 0
+.code
+main PROC
+mov eax, black + (white * 16)
+call settextcolor
+mov edx, offset str1
+call writestring
+call crlf
+
+
+exit
+main ENDP
+
+END main

@@ -1,0 +1,28 @@
+;mov Al, 255
+;movzx EAX, AL ;  000000011111111 zx= zero extended
+	
+mov AX, 65535
+movzx EAX, AX
+call WriteDec
+
+COMMENT @
+;mov AL, val2
+mov AL, 127
+movsx eax, al ; sx= sign extended
+call writeint
+@
+
+mov eax,0
+mov ebx,0
+mov ecx,0
+mov edx,0
+add edx, eax
+add edx, 1
+add edx,ebx
+sub edx, ecx
+add edx, 0Ah
+sub edx, 65o
+add edx, 73d
+mov eax, edx
+
+call writedec

@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="121EF47E-1C0F-0AD0-71BD-0CF197C6856D" containerWithKeyObject="568E4ADA-9FB0-FF8A-9748-5EC96599EA8F" localFKIndex="5C4FE1B5-07CB-29E3-7CA6-0B063F7DC739" name="meal_operation_meal_plan_fk">
+<sourceDDLFile>task2.ddl</sourceDDLFile>
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:21:23 UTC</createdTime>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<importedID>B7DE0243-B473-56DF-BF6B-0D76F11784A6</importedID>
+<referredTableLongName>meal_plan</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>2B15BA32-3975-81B6-5BA2-74F9A09191E3</referredTableID>
+<keyObject>B2BF6DA1-FF7C-0AA8-B72D-3C13880F0139</keyObject>
+<referredKeyID>B2BF6DA1-FF7C-0AA8-B72D-3C13880F0139</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>meal_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

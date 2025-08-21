@@ -1,0 +1,48 @@
+
+INCLUDE Irvine32.inc
+
+.data
+title1 BYTE "Survey Completed! ", 0
+caption2 BYTE "Thanks for completing Survey. "
+		BYTE "Would you like to recieve the results?", 0
+result BYTE "Thanks for participating!", 0
+msg_val dword ?
+msg1 byte "yes! yay!", 0
+msg2 byte "no! uhh!", 0
+
+.code
+main PROC
+mov eax, 0
+mov ebx, 0
+mov ebx, OFFSET title1
+mov edx, OFFSET caption2
+call msgboxask
+
+mov msg_val, eax
+cmp msg_val, 6
+je l1
+cmp msg_val, 7
+je l2
+
+l1:
+mov edx, offset msg1
+call writestring
+call crlf
+jmp exit_out
+
+l2:
+mov edx, offset msg2
+call writestring
+call crlf
+jmp exit_out
+
+
+exit_out:
+mov edx, OFFSET result
+call WriteString
+
+exit
+
+main ENDP
+
+END main

@@ -1,0 +1,11 @@
+select first_name||' '||last_name as concat from employees
+select * from employees
+select first_name|| '_earn_$_'||salary*12||'_per_Year' as "per Year Salary" from employees
+select DISTINCT Department_ID from employees
+select last_name from Employees where last_name like '_a%'
+select first_name from Employees where first_name like 'A_a__'
+-- "_" limits the no. of characters in the column.
+select * from employees order by salary desc
+select (2+2)*100 from dual
+-- dual used for mathematical calculations (special dummy table)
+select abs(salary-10000) from employees

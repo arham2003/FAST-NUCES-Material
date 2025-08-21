@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookstore Form</title>
+</head>
+<body>
+    <h2>Add a New Book</h2>
+    <form action="addBook" method="POST">
+        <label for="isbn">ISBN:</label><br>
+        <input type="text" id="isbn" name="isbn" required><br>
+        <label for="title">Title:</label><br>
+        <input type="text" id="title" name="title" required><br>
+        <label for="author">Author:</label><br>
+        <input type="text" id="author" name="author" required><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <h2>Book List</h2>
+    <div id="book-list"></div>
+
+    <script>
+        fetch('getBooks')
+            .then(response => response.json())
+            .then(data => {
+                const bookListDiv = document.getElementById('book-list');
+                data.forEach(book => {
+                    const bookDiv = document.createElement('div');
+                    bookDiv.innerHTML = `${book.isbn} - ${book.title} by ${book.author}`;
+                    bookListDiv.appendChild(bookDiv);
+                });
+            });
+    </script>
+</body>
+</html>

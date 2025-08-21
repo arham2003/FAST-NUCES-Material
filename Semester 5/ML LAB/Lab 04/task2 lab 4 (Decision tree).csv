@@ -1,0 +1,15 @@
+ID,AGE,JOB_STATUS,OWNS_HOUSE,CREDIT_RATING,CLASS
+1,Young,FALSE,FALSE,Fair,No
+2,Young,FALSE,FALSE,Good,No
+3,Young,TRUE,FALSE,Good,Yes
+4,Young,TRUE,TRUE,Fair,Yes
+5,Young,FALSE,FALSE,Fair,No
+6,Middle,FALSE,FALSE,Fair,No
+7,Middle,TRUE,TRUE,Good,Yes
+8,Middle,FALSE,TRUE,Excellent,Yes
+9,Middle,FALSE,TRUE,Excellent,Yes
+10,Old,FALSE,TRUE,Excellent,Yes
+11,Old,FALSE,TRUE,Good,Yes
+12,Old,TRUE,FALSE,Good,Yes
+13,Old,TRUE,FALSE,Excellent,Yes
+14,Old,FALSE,FALSE,Fair,No

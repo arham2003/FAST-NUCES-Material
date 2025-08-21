@@ -1,0 +1,129 @@
+INCLUDE Irvine32.inc
+
+.data
+; lab 4 - task 7
+val1 BYTE 10h
+val2 WORD 8000h
+val3 DWORD 0FFFFh
+val4 WORD 7FFFh
+
+;lab 4 - task 6
+A dword 0FF10h
+B dword 0E10Bh
+
+;lab 4 - task 5
+secInDay = 24*60*60
+
+COMMENT @
+;TASK 4 - B
+;EAX = val1 + val2 - 654h + val3
+val1 DWORD 25h
+val2 BYTE 36o
+val3 WORD 20d
+@
+
+COMMENT @
+;lab 4 - task 3
+varB BYTE +10
+varW WORD -150
+varD DWORD 600
+@
+;my name is Arham
+.code
+main PROC
+
+movzx eax, val2
+call dumpregs
+call crlf
+inc eax
+call dumpregs
+
+movzx eax, val1
+movzx ebx, val2
+sub eax,ebx
+call dumpregs
+
+movzx eax, val4
+movzx ebx,val2
+sub eax, ebx
+call dumpregs
+
+
+COMMENT @
+mov eax, A
+mov ebx, B
+call dumpregs
+call crlf
+xchg eax,ebx
+call dumpregs
+@
+
+COMMENT @
+mov eax,0
+mov eax, secInDay
+call writedec
+@
+
+COMMENT @
+mov eax, 0
+mov eax, val1
+movzx ebx, val2
+add eax, ebx
+movzx ebx, val3
+add eax, ebx
+call writeint
+@
+
+COMMENT @
+;EAX = 89 + 75Fh - 46o - 28 + 1101b
+mov eax, 0
+mov eax,89d
+add eax,75Fh
+sub eax,46o
+sub eax, 28d
+add eax,1101b
+call writedec
+@
+
+;lab 4 - task 2
+COMMENT @
+mov al, 'a'
+movzx eax, al
+call writedec
+call crlf
+
+mov ax, 'r'
+movzx eax, ax
+call writedec
+call crlf
+
+mov bl, 'h'
+movzx eax, bl
+call writedec
+call crlf
+@
+
+COMMENT @
+mov eax, 0
+movsx ebx, varB
+mov eax,ebx
+call writeint
+call crlf
+
+mov eax, 0
+mov bx, varW
+movsx eax,bx
+call writeint
+call crlf
+
+mov eax, 0
+mov ebx, varD
+movzx eax,bx
+call writeint
+call crlf
+@
+
+
+exit
+main ENDP
+END main

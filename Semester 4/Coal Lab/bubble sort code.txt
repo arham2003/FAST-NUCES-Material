@@ -1,0 +1,49 @@
+
+INCLUDE Irvine32.inc
+.data
+array dword 8,5,1,2,6,1000 ;1000 added at end to avoid random garbage
+
+.code
+main PROC
+mov edx,0 ; flag (not swapped)
+mov ecx, 5
+
+l1:
+mov esi, offset array
+mov ebx, [esi + 4]
+cmp [esi], ebx
+jg l2
+jl lm
+	l2:
+		xchg [esi],ebx ;1st index= 5, ebx = 5
+		add esi,4
+		xchg [esi],ebx ;2nd index = 8, ebx=5
+		mov ebx,[esi+4] ;swapped, now ebx = 1
+		mov edx,1 ;swapped flag
+		cmp edx,0
+		je break
+		cmp [esi],ebx
+		jg l2
+lm:
+add esi,4
+mov ebx,[esi+4]
+
+break: ;inner loop break
+loop l1
+
+
+mov ecx,5
+mov esi,offset array
+print:
+mov eax,[esi]
+add esi,4
+call writedec
+call crlf
+loop print
+
+
+exit
+
+main ENDP
+
+END main

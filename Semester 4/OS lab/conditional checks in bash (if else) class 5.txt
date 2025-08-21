@@ -1,0 +1,13 @@
+conditional checks in bash:
+
+"-eq" -> equals
+"-ne" -> not equals
+"-gt" -> greater than
+"-lt" -> less than
+"-ge" -> greater than or equal
+"-le" -> less than or equal
+
+
+"-f" -> for files exists and is a regular file
+"command" -> this command checks for the existence of a command (does not need square brackets in if statement)
+"which 'command' " -> tells us the fully qualified path to the command

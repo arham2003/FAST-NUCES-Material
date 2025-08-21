@@ -1,0 +1,47 @@
+
+INCLUDE Irvine32.inc
+.data
+arrayD dword 362,210,900,101,450
+arrayB byte 10,64,76,09,100
+arr_arham word 5 dup (?)
+
+string1 byte "Sum: ", 0
+.code
+main PROC
+
+    mov ecx, LENGTHOF arrayD   ; Number of elements in the arrays
+    mov esi, OFFSET arrayD     ; Pointer to arrayD
+    mov edi, OFFSET arrayB     ; Pointer to arrayB
+    mov ebx, offset arr_arham       ; Pointer to resultArray
+
+calculate:
+    mov eax, [esi]       ; Load DWORD from arrayD
+    add esi, TYPE arrayD * 2        ; Move to next DWORD in arrayD
+    movzx edx, BYTE PTR [edi + 1]  ; Load BYTE from arrayB (even index)
+    add edi, 2                      ; Move to next BYTE in arrayB (odd index)
+    add ax, dx                      ; Add DWORD from arrayD with BYTE from arrayB
+    mov [ebx], ax                   ; Store the result in resultArray
+    add ebx, 2                      ; Move to next WORD in resultArray
+    loop calculate                  ; Repeat for all elements
+
+mov edx, offset string1
+call writestring
+call crlf
+
+    ; Display the contents of resultArray
+    mov eax, 0
+    mov ecx, LENGTHOF arr_arham
+    mov esi, OFFSET arr_arham
+display_result:
+    movzx eax, WORD PTR [esi]  ; Load the WORD from resultArray
+    call Writedec             ; Display the value
+    call Crlf
+    add esi, 2                 ; Move to next WORD
+    loop display_result
+
+
+exit
+
+main ENDP
+
+END main

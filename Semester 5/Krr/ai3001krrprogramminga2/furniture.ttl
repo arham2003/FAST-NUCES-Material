@@ -1,0 +1,84 @@
+@prefix : <http://example.org/furniture#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# Defining the main Furniture class
+:Furniture rdf:type rdfs:Class ;
+           rdfs:label "Furniture" .
+
+# Defining primary subclasses of Furniture
+:Seating rdf:type rdfs:Class ;
+         rdfs:subClassOf :Furniture ;
+         rdfs:label "Seating" .
+
+:Table rdf:type rdfs:Class ;
+       rdfs:subClassOf :Furniture ;
+       rdfs:label "Table" .
+
+:Storage rdf:type rdfs:Class ;
+         rdfs:subClassOf :Furniture ;
+         rdfs:label "Storage" .
+
+:Bed rdf:type rdfs:Class ;
+     rdfs:subClassOf :Furniture ;
+     rdfs:label "Bed" .
+
+# Defining specific types of Seating
+:Chair rdf:type rdfs:Class ;
+       rdfs:subClassOf :Seating ;
+       rdfs:label "Chair" .
+
+:Sofa rdf:type rdfs:Class ;
+      rdfs:subClassOf :Seating ;
+      rdfs:label "Sofa" .
+
+:Armchair rdf:type rdfs:Class ;
+          rdfs:subClassOf :Seating ;
+          rdfs:label "Armchair" .
+
+:Stool rdf:type rdfs:Class ;
+       rdfs:subClassOf :Seating ;
+       rdfs:label "Stool" .
+
+# Defining specific types of Table
+:DiningTable rdf:type rdfs:Class ;
+             rdfs:subClassOf :Table ;
+             rdfs:label "Dining Table" .
+
+:CoffeeTable rdf:type rdfs:Class ;
+             rdfs:subClassOf :Table ;
+             rdfs:label "Coffee Table" .
+
+:SideTable rdf:type rdfs:Class ;
+           rdfs:subClassOf :Table ;
+           rdfs:label "Side Table" .
+
+# Defining specific types of Storage
+:Cabinet rdf:type rdfs:Class ;
+         rdfs:subClassOf :Storage ;
+         rdfs:label "Cabinet" .
+
+:Wardrobe rdf:type rdfs:Class ;
+          rdfs:subClassOf :Storage ;
+          rdfs:label "Wardrobe" .
+
+:Bookshelf rdf:type rdfs:Class ;
+           rdfs:subClassOf :Storage ;
+           rdfs:label "Bookshelf" .
+
+:Drawer rdf:type rdfs:Class ;
+        rdfs:subClassOf :Storage ;
+        rdfs:label "Drawer" .
+
+# Defining specific types of Bed
+:SingleBed rdf:type rdfs:Class ;
+           rdfs:subClassOf :Bed ;
+           rdfs:label "Single Bed" .
+
+:DoubleBed rdf:type rdfs:Class ;
+           rdfs:subClassOf :Bed ;
+           rdfs:label "Double Bed" .
+
+:BunkBed rdf:type rdfs:Class ;
+         rdfs:subClassOf :Bed ;
+         rdfs:label "Bunk Bed" .

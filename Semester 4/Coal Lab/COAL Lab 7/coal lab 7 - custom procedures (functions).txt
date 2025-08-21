@@ -1,0 +1,32 @@
+; custom procedures (functions)
+INCLUDE Irvine32.inc
+
+.data
+
+prompt BYTE "Output: ", 0
+
+
+.code
+main PROC
+
+;message prompt
+mov edx, OFFSET prompt
+call WriteString
+
+mov eax, 5
+mov ebx, 5
+call addInteger
+call writedec
+
+	
+
+exit
+main ENDP
+; custom procedure
+	addInteger PROC USES eax ebx
+		add eax, ebx
+		call writedec
+		ret
+	addInteger ENDP
+
+END main

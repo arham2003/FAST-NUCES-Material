@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="lab 7 task 2 22k4080" id="0645C681-BECE-1636-5B01-B7A49E07BD50" version="3.5">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:21:01 UTC</createdTime>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>0645C681-BECE-1636-5B01-B7A49E07BD50</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="EF90CB2C-277A-E80D-D7AD-19C92E6A2910">
+<designStoragePath>C:\task2</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>

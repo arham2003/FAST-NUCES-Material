@@ -1,0 +1,44 @@
+lab 11:
+
+ospf router commands:
+
+config t
+router ospf 1 -- (1 is process number)
+network 192.168.0.0 0.0.0.255 area 0
+network 192.168.1.0 0.0.0.255 area 0
+
+
+--show command:
+show ip route (for showing routing table)
+show ospf neighbor (for neighbourhood database)
+
+-- BGP commands: (border gateway protocol)
+For Pakistan (AS - 1):
+
+config t
+router bgp 1
+neighbor 192.168.1.2 remote-as 71
+network 192.168.0.0 mask 255.255.255.0
+exit
+do write   --> very necessary
+
+For China (AS - 71):
+
+
+router bgp 71
+neighbor 192.168.1.1 remote-as 1
+neighbor 192.168.2.2 remote-as 79
+network 192.168.4.0 mask 255.255.255.0
+exit
+do write
+
+For Bangladesh (AS - 79):
+
+
+router bgp 79
+neighbor 192.168.2.1 remote-as 71
+network 192.168.4.0 mask 255.255.255.0
+exit
+do write
+
+

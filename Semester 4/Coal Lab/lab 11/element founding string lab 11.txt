@@ -1,0 +1,30 @@
+INCLUDE Irvine32.inc
+
+.data
+alpha BYTE "abcdefgh",0
+
+string1 BYTE "Element Found",0
+string2 BYTE "Element Not Found",0
+
+.code
+main PROC
+mov edi, offset alpha
+mov al, 'f'
+
+cld
+repne scasb
+
+jnz quit
+dec edi
+
+mov edx, offset string1
+call writestring
+exit
+
+quit:
+mov edx, offset string2
+call writestring
+
+exit
+main ENDP
+END main

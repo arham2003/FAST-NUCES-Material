@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="inventory_hostel_fk" directorySegmentName="seg_0" id="B39E42B5-657C-0875-1D43-059D9C1037ED">
+<createdBy>ArhamKhan</createdBy>
+<createdTime>2024-10-09 15:21:40 UTC</createdTime>
+<generatorID>609CBC4B-7535-5B5E-BBBC-173929A770F2</generatorID>
+<ownerDesignName>lab 7 task 2 22k4080</ownerDesignName>
+<engineerTo>
+<item key="D5CD0DFE-326C-7965-2969-190CA6D77B91" value="true"/>
+</engineerTo>
+<sourcePk>94362386-E18A-BFB0-EAC5-B97D0328433A</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>DA0071EE-5540-0899-05AE-34E6184625B8</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>18D5AC37-BD03-C476-47BC-0C174A495245</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

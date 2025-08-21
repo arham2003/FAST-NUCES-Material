@@ -1,0 +1,103 @@
+BYTE ; it is a data type or data definition(.data)
+
+
+Formula (2^n)-1 = unsigned
+Signed minimum range = 2^(n-1)
+Signed Maximum Range = (2^(n-1)-1)
+where n represents number of bits i.e(n = {8,16,32})
+
+mov syntax:
+
+mov	destination,source
+	Register, Register ; example: eax, ebx
+	Register, mem ; Eax, val1
+	Register, immediate ; Eax, 15
+Radix:
+
+To represent the number system we use radix.
+
+h -> hexadecimal
+c -> binary
+d -> decimal
+
+.data
+	;variables
+	;memory operands
+
+	COMMENT @
+	val1 BYTE 10 ; val1 is an 8-bit variable or memory operand
+				 ; "10" is an immediate value or literal
+				 ;int val1 = 10
+
+	val2 BYTE ? ; This is a variable declaration
+	val3 BYTE 10, 20, 30 ;multiple initialization
+	@
+
+
+* more work:
+
+INCLUDE Irvine32.inc
+
+count = 50 ; "=" directive or "equ" directive
+;count equ 50
+
+
+.data
+
+
+
+val1 BYTE 78h
+val2 WORD 2332h
+myVal SBYTE -10
+
+count2 equ <"dsds"> ;symbolic constants
+
+strVal BYTE count2 ; strVal BYTE "dsds" -> for string
+
+.code
+main PROC
+
+COMMENT !
+movzx EAX,val1
+call DumpRegs
+mov EAX, 0
+call DumpRegs
+mov AX, val2
+call DumpRegs
+
+mov eax,12345678h
+call dumpregs
+
+mov ax,0
+call dumpregs
+
+mov eax,0
+movsx eax,val1
+call writeint
+!
+
+COMMENT @
+mov eax, count
+call writeint
+call crlf
+count = 70
+mov eax, count
+call writeint
+@
+
+mov eax,0
+mov ebx,0
+call dumpregs
+mov eax, 50h
+mov ebx, 51h
+call dumpregs
+xchg eax, ebx
+call dumpregs
+
+
+
+exit
+main ENDP
+END main
+
+

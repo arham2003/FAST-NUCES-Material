@@ -1,0 +1,21 @@
+paper 1:
+
+- first collect human feedback who assess the model output alignment
+- use human labeled dataset to train reward function
+- lastly, fine tune the model by maximizing reward-weighted likelihood
+
+research gaps:
+major challenges remain in domains where large-scale text-to-image models fail to generate images that are well-aligned with text
+prompts
+
+findings:
+study shows that RL with human feedback (RLHF) framework has successfully
+aligned large-scale language models (e.g., GPT-3)10
+
+so the success of RLHF in language domains motivated them to propose a fine-tuning method for text-to-image models.
+
+main contributions:
+
+- significant improvement in image-text alignment up to 47% at the expense of degraded image quality.
+- learned reward function predicts human assessments of the quality more accurately than the CLIP score.
+- Naive fine-tuning with human feedback can significantly reduce the image quality, despite better alignment
